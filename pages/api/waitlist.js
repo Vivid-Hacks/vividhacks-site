@@ -11,7 +11,7 @@ export default async (req, res) => {
   secrets = JSON.parse(secrets);
   const uri = secrets.mongodb;
   const {MongoClient} = require('mongodb')
-  const mongoclient = new MongoClient(uri, {poolSize: 10, bufferMaxEntries: 0, useNewUrlParser: true,useUnifiedTopology: true});
+  const mongoclient = new MongoClient(uri);
   await mongoclient.connect();
   const db = mongoclient.db("vivid-hacks");
   let user = await db.collection("main").findOne({email: req.body.email});
