@@ -13,7 +13,20 @@ export default async (req, res) => {
   const {MongoClient} = require('mongodb')
   const mongoclient = new MongoClient(uri, {poolSize: 10, bufferMaxEntries: 0, useNewUrlParser: true,useUnifiedTopology: true});
   await mongoclient.connect();
-  // do things
+  const db = mongoclient.db("vivid-hacks");
+  let user = await db.collection("main").findOne({email: req.body.email});
+  if (user){
+    await db.collection("main").updateOne({email: req.body.email}, {
+      name: req.body.name,
+      level: req.body.level
+    })
+    return await mongoclient.close();
+  }
+  await db.collection("main").insertOne({
+    email: req.body.email,
+    name: req.body.name,
+    level: req.body.level
+  })
   await mongoclient.close();
   return res.send(`Success! EMAIL: ${req.body.email}, NAME: ${req.body.name}, LEVEL: ${req.body.level}`);
 }
