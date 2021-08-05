@@ -1,6 +1,7 @@
 
 export default async (req, res) => {
   //
+  const fetch = require("node-fetch")
   var queryParams = {
     waitlist: "i",
     membercount: "i"
@@ -9,7 +10,9 @@ export default async (req, res) => {
   const fs = require("file-system");
   let secrets = process.env.secrets;
   if (!secrets) {
-    secrets = fs.readFileSync("../../secrets.json");
+    let temp = await fetch("http://localhost:3000/secrets.json");
+    temp = await temp.json();
+    secrets = JSON.stringify(temp);
   };
   secrets = JSON.parse(secrets);
   const uri = secrets.mongodb;
@@ -41,8 +44,8 @@ export default async (req, res) => {
     await mongoclient.close();
     return res.send(`Success! EMAIL: ${req.body.email}, NAME: ${req.body.name}, LEVEL: ${req.body.level}`);
   }else if (req.query.query === "membercount"){
-    let amount = db.collection("main").count();
+    let amount = await db.collection("main").count();
     await mongoclient.close();
-    return res.send((await amount).toString())
+    return res.send(( amount).toString())
   }
 }
