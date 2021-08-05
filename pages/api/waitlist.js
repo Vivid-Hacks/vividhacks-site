@@ -16,10 +16,10 @@ export default async (req, res) => {
   const db = mongoclient.db("vivid-hacks");
   let user = await db.collection("main").findOne({email: req.body.email});
   if (user){
-    await db.collection("main").updateOne({email: req.body.email}, {
+    await db.collection("main").updateOne({email: req.body.email}, {$set: {
       name: req.body.name,
       level: req.body.level
-    })
+    }})
     return await mongoclient.close();
   }
   await db.collection("main").insertOne({
