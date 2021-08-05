@@ -1,6 +1,11 @@
 
 export default async (req, res) => {
   //
+  var queryParams = {
+    waitlist: "i",
+    membercount: "i"
+  }
+  if (queryParams[req.query.query]) return res.send("Not a valid endpoint!")
   const fs = require("file-system");
   let secrets = process.env.secrets;
   if (!secrets) {
