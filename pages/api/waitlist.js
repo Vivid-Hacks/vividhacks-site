@@ -20,6 +20,7 @@ export default async (req, res) => {
       name: req.body.name,
       level: req.body.level
     }})
+    res.send("Updated!")
     return await mongoclient.close();
   }
   await db.collection("main").insertOne({
