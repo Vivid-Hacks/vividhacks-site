@@ -2,7 +2,7 @@
     position: absolute;
     left: 0;
     transform: translateY(10px);
-    width: 99.14vw;
+    width: 100vw;
     background-color: #185D4D;
     color: #BAFFEE;
 }
@@ -31,4 +31,14 @@
 
 .footer .container ul li {
     transform: translateX(-50px);
+}
+
+.logo { width: 100px; }
+
+.copyright {
+    display: block; 
+    margin-top: 20px; 
+    width: 155px; 
+    font-weight: bold; 
+    font-size: 1.05em;
 }

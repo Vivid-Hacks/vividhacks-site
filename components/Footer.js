@@ -5,9 +5,9 @@ const Footer = () => {
         <section className={footerStyles.footer}>
             <div className={footerStyles.container}>
                 <div>
-                    <img src="./static/images/logo.svg" style="width: 100px;" />
+                    <img src="/logo.svg" className={footerStyles.logo}/>
                     <br />
-                    <span style="display: block; margin-top: 20px; width: 155px; font-weight: bold; font-size: 1.05em;">
+                    <span className={footerStyles.copyright}>
                         Copyright 2021 Vivid Hacks. All rights reserved.</span>
                 </div>
                 <div>
