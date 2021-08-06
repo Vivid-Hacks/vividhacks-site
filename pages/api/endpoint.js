@@ -33,7 +33,7 @@ export default async (req, res) => {
           level: req.body.level
         }
       })
-      res.send("Updated!")
+      res.send("Your info has been updated!")
       return await mongoclient.close();
     }
     await db.collection("main").insertOne({
@@ -42,7 +42,7 @@ export default async (req, res) => {
       level: req.body.level
     })
     await mongoclient.close();
-    return res.send(`Success! EMAIL: ${req.body.email}, NAME: ${req.body.name}, LEVEL: ${req.body.level}`);
+    return res.send(`Nice! You are on the waitlist now! As a review, this is the info we got: EMAIL: ${req.body.email}, NAME: ${req.body.name}, LEVEL: ${req.body.level}`);
   }else if (req.query.query === "membercount"){
     let amount = await db.collection("main").count();
     await mongoclient.close();
