@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
       <main>
         Hey! We have absolutely no idea how you got here, but you probably *don't* want to be here, so here's a couple of places that you *could* be.
       </main>
+
+      <Footer />
     </div>
   )
 }
