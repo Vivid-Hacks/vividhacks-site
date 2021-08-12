@@ -20,7 +20,7 @@ const Landing = () => {
       <div className={styles.horizontalRule}>
         <div className={styles.line} />
         <img
-          src={Svg.src}
+          src="logo.svg"
           alt="logo.svg"
           style={{
             width: "4.5rem",
