@@ -1,7 +1,7 @@
 import styles from "./landing.module.css";
 import Svg from "../../public/logo.svg";
 import Countdown from "../countdown/";
-
+import Register from "../register/"
 const Landing = () => {
   return (
     <div className={styles.container}>
@@ -11,7 +11,7 @@ const Landing = () => {
           EVERYONE.
         </h1>
       </span>
-      <button className={styles.button}>Register Now</button>
+      <Register />
       <h3 className={styles.date}>October 12, 2021</h3>
       <p>
         A 60-Hour Student Lead Hackathon Designed For{" "}

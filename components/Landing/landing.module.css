@@ -28,6 +28,7 @@
   border: none;
   border-radius: 8px;
   color: white;
+  cursor: pointer;
 }
 
 .date {

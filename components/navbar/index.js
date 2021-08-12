@@ -2,7 +2,6 @@ import styles from "./navbar.module.css";
 import Image from "next/image";
 import Svg from "../../public/logo.svg";
 import Link from "next/link";
-console.log(Svg.src)
 const Navbar = () => {
   return (
     <div className={styles.container}>
@@ -18,10 +17,10 @@ const Navbar = () => {
           <Link href="#"> TIMELINE</Link>
         </li>
         <li className={styles.link}>
-          <Link href="#"> ABOUT</Link>
+          <Link href="#about"> ABOUT</Link>
         </li>
         <li className={styles.link}>
-          <Link href="#"> FAQs</Link>
+          <Link href="#faqs"> FAQs</Link>
         </li>
         <li className={styles.link}>
           <Link href="#"> REGISTER</Link>
