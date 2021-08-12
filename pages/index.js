@@ -1,18 +1,13 @@
-import Head from 'next/head'
-import Footer from '../components/Footer';
+import Head from "next/head";
+import Image from "next/image";
+import Navbar from "../components/navbar";
+import Landing from "../components/Landing";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Vivid hacks Backend</title>
-      </Head>
-
-      <main>
-        Hey! We have absolutely no idea how you got here, but you probably *don't* want to be here, so here's a couple of places that you *could* be.
-      </main>
-
-      <Footer />
-    </div>
-  )
+    <>
+      <Navbar />
+      <Landing />
+    </>
+  );
 }

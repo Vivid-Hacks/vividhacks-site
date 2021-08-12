@@ -1,0 +1,51 @@
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+
+  margin-bottom: -2rem;
+}
+
+.topHeading {
+  font-size: min(7vw, 125.4px);
+}
+
+.everyoneHeading {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.button {
+  background: #015aff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.date {
+  font-size: min(3vw, 48.6px);
+}
+
+.text {
+  /* border: 2px solid white; */
+  color: #ff9900;
+}
+
+.horizontalRule {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border: 2px solid white;
+  height: 2px;
+  width: 20vw;
+}
