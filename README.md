@@ -29,4 +29,4 @@ $ yarn dev
 4. Head over to http://localhost:3000 to see the website built locally!
 
 [next.js]: https://nextjs.org
-[website]: https://github.com/Vivid-Hacks/vivid-hacks-website 
+[website]: http://legacy.vividhacks.tk
