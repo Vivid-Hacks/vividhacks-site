@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link href="#faqs"> FAQs</Link>
         </li>
         <li className={styles.link}>
-          <Link href="#"> REGISTER</Link>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> REGISTER</a>
         </li>
       </ul>
     </div>

@@ -2,14 +2,14 @@ import styles from "./register.module.css";
 
 import Link from "next/link";
 
-function showModal() {
-
+function register() {
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 }
 
 const Register = () => {
     return (
         <div>
-            <button onClick={showModal} className={styles.offset}><span className={styles.buttonSpan}>Register Now</span></button>
+            <button onClick={register} className={styles.offset}><span className={styles.buttonSpan}>Register Now</span></button>
             <div className={styles.invisible, styles.modal}>
                 asdf
             </div>
