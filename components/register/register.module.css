@@ -60,3 +60,12 @@
 .modal {
   position: fixed;
 }
+@media (max-width: 500px){
+  .buttonSpan {
+    font-size: 1.2em;
+  }
+  .offset {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
