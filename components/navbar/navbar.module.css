@@ -58,3 +58,8 @@
     content: "•"
   }
 }
+@media (min-width: 500px){
+  .linkContainer {
+    transform: none !important;
+  }
+}
