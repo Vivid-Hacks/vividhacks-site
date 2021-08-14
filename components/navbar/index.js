@@ -7,6 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 import * as React from "react"
 
+var lineLeft = styles.lineLeft;
+var lineRight = styles.lineRight;
+var lineMiddle = styles.lineMiddle;
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +25,13 @@ class Navbar extends React.Component {
   toggleMobileNavbar(close) {
     if (this.menuStyling.transform !== undefined || close === true) {
       this.menuStyling = {}
+      lineLeft = styles.lineLeft;
+      lineRight = styles.lineRight;
+      lineMiddle = styles.lineMiddle;
     } else {
+      lineLeft = styles.lineLeftClose;
+      lineRight = styles.lineRightClose;
+      lineMiddle = styles.lineMiddleClose;
       this.menuStyling = {
         transform: "translateX(200px)"
       }
@@ -35,8 +45,11 @@ class Navbar extends React.Component {
     this.addedEvLisnr = true;
     let elm = this;
     window.addEventListener("click", function (thing) {
-      if (thing.target.tagName === "svg") return;
+      if (thing.target.tagName === "A" || thing.target.tagName === "hr") return;
       elm.menuStyling = {};
+      lineLeft = styles.lineLeft;
+      lineRight = styles.lineRight;
+      lineMiddle = styles.lineMiddle;
       elm.forceUpdate()
     })
   }
@@ -48,7 +61,11 @@ class Navbar extends React.Component {
         <div className={styles.logo}>
           <a href="/"><h3 className={styles.logoText}>Vivid Hacks</h3></a>
           <a href="/"><img src="logo.svg" alt="logo.svg" style={{ width: "5rem" }} /></a>
-          <a onClick={this.toggleMobileNavbar} className={styles.menuIcon} > <FontAwesomeIcon icon={fa.faBars} /></a>
+          <a onClick={this.toggleMobileNavbar} className={styles.menuIcon} >
+            <hr className={lineLeft}></hr>
+            <hr className={lineMiddle}></hr>
+            <hr className={lineRight}></hr>
+          </a>
         </div>
         <ul className={this.menu} style={this.menuStyling}>
           <li className={styles.link}>

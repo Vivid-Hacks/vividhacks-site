@@ -31,7 +31,7 @@
 }
 
 .menuIcon {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 500px) {
@@ -47,7 +47,7 @@
     transition: all 0.5s;
   }
   .menuIcon {
-    display: block;
+    display: block !important;
     position: absolute;
     right: 50px;
   }
@@ -62,4 +62,53 @@
   .linkContainer {
     transform: none !important;
   }
+}
+.menuIcon {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	display: block;
+}
+.menuIcon hr {
+	height: 2px;
+	width: 30px;
+	display: block;
+	background-color: #fff;
+	margin-bottom: 7px;
+	cursor: pointer;
+}
+.lineLeft {
+	width: 16.5px !important;
+  float: left !important;
+	transition: all 200ms linear;
+}
+.lineRight {
+  margin-top: 0;
+	width: 16.5px !important;
+	float: right;
+	transition: all 200ms linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menuIcon:hover .lineLeft,
+  .menuIcon:hover .lineRight {
+    width: 30px !important;
+  }
+}
+
+.lineLeftClose {
+  transition: all 0.1s linear !important;
+  transform-origin: left;
+  transform: rotate(45deg)
+}
+.lineRightClose {
+  transition: all 0.1s linear !important;
+  transform-origin: left;
+  transform: rotate(-45deg);
+}
+.lineMiddleClose {
+  opacity: 0;
+}
+.lineMiddle {
+  color: inherit;
 }
