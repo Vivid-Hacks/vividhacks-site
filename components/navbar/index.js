@@ -23,7 +23,7 @@ class Navbar extends React.Component {
   }
 
   toggleMobileNavbar(close) {
-    if (this.menuStyling.transform !== undefined || close === true) {
+    if (this.menuStyling.transform !== undefined) {
       this.menuStyling = {}
       lineLeft = styles.lineLeft;
       lineRight = styles.lineRight;
@@ -45,7 +45,7 @@ class Navbar extends React.Component {
     this.addedEvLisnr = true;
     let elm = this;
     window.addEventListener("click", function (thing) {
-      if (thing.target.tagName === "A" || thing.target.tagName === "hr") return;
+      if (thing.target.tagName === "A" || thing.target.tagName === "HR") return;
       elm.menuStyling = {};
       lineLeft = styles.lineLeft;
       lineRight = styles.lineRight;
