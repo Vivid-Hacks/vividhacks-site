@@ -1,7 +1,8 @@
 import styles from "./landing.module.css";
 import Svg from "../../public/logo.svg";
 import Countdown from "../countdown/";
-import Register from "../register/"
+import Register from "../register/";
+import About from "../about/";
 const Landing = () => {
   return (
     <div className={styles.container}>
@@ -30,6 +31,7 @@ const Landing = () => {
         <div className={styles.line} />
       </div>
       <Countdown />
+      <About />
     </div>
   );
 };
