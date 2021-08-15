@@ -1,43 +1,64 @@
+.division {
+    --lineWidth: 500px
+}
 .container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
+    margin-top: 30px;
+    width: 99vw;
+    padding: 10px 50px;
+    overflow-x: hidden;
 }
-
-.heading {
-  font-weight: bolder;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: min(5vw, 59.3px);
-  margin-bottom: 0rem;
+.bigtext {
+    margin-left: 15%;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+    font-size: 2.5em;
 }
-
-.wrapper {
-  display: flex;
-  width: 90%;
-  margin-right: auto;
-  align-items: center;
+.desc {
+    float: right;
+    margin-right: 15%;
+    max-width: 40%;
+    font-size: 1.2em;
+    line-height: 2.5em;
 }
-
-.earth {
-  width: 15vw;
-  max-width: 151.8px;
+.mainContent {
+    margin-top: 20px;
 }
-
-.para {
-  margin-left: 2rem;
-  font-size: min(5vw, 23.7167px);
-  line-height: 2rem;
-  /* line-height: 4vh; */
+.desc span {
+    font-weight: bold;
 }
-
-.gradient {
-  border-radius: 50%;
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  background: #f59a6f;
-  opacity: 0.3;
-  filter: blur(100vw);
+@media (max-width: 500px){
+    .desc {
+        float: right;
+        margin-right: 0;
+        max-width: 100%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    .mainContent iframe {
+        margin-top: 20px;
+        width: 100% !important;
+        height: 400px;
+    }
+    .faqwrapper {
+        padding-top: 450px;
+        position: absolute;
+    }
+}
+.mainContent iframe {
+    margin-top: 20px;
+    width: 40%;
+    height: 400px;
+}
+.faqwrapper {
+    margin-top: 10px;
+}
+.division {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.growingLine {
+    width: var(--lineWidth);
 }

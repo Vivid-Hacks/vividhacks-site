@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 import * as React from "react"
 import Svg from "../../public/logo.svg";
+import styles from "./navbar.module.css";
 
 var lineLeft = styles.lineLeft;
 var lineRight = styles.lineRight;
@@ -60,7 +61,7 @@ class Navbar extends React.Component {
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="/"><h3 className={styles.logoText}>Vivid Hacks</h3></a>
-          <a href="/"><img src={Svg.src} alt="logo.svg" style={{ width: "5rem" }} /></a>
+          <a href="/"><img src="logo.svg" alt="logo.svg" style={{ width: "5rem" }} /></a>
           <a onClick={this.toggleMobileNavbar} className={styles.menuIcon} >
             <hr className={lineLeft}></hr>
             <hr className={lineMiddle}></hr>

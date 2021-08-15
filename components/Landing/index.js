@@ -25,7 +25,7 @@ const Landing = () => {
       <div className={styles.horizontalRule}>
         <div className={styles.line} />
         <img
-          src={Svg.src}
+          src="logo.svg"
           alt="logo.svg"
           style={{
             width: "4.5rem",
@@ -37,14 +37,12 @@ const Landing = () => {
       <Countdown />
       <div className={styles.scrollSvgContainer}>
         <img
-          src={scrollSvg.src}
+          src="scroll.svg"
           alt="scroll svg"
           style={{ width: "2rem", marginRight: "0.5rem" }}
         />
         Scroll down
       </div>
-      <About />
-
     </div>
   );
 };

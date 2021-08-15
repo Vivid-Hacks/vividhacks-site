@@ -13,7 +13,6 @@ export default function Home() {
       <Navbar />
       <Landing />
       <About />
-      <Timeline />
       <Sponsors />
       <Team />
       <TeamGrid />

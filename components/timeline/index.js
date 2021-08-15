@@ -1,13 +1,7 @@
 import styles from "./timeline.module.css";
-import { useState } from "react";
 
 const Timeline = () => {
-
-    return (
-        <div>
-            timeline goes here
-        </div>
-    );
+  return <h2 id="timeline" className={styles.heading}>Timeline (TBA)</h2>;
 };
 
 export default Timeline;

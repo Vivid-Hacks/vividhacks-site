@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <img
-        src={logo.src}
+        src="logo.svg"
         alt="logo.svg"
         style={{ width: "3rem", marginLeft: "auto", marginRight: "auto" }}
       />
