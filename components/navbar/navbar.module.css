@@ -33,7 +33,9 @@
 .menuIcon {
   display: none !important;
 }
-
+.container ul li {
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .logo img {
     width: 3rem !important;
