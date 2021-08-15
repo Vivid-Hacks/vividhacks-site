@@ -35,6 +35,12 @@
 }
 
 @media (max-width: 500px) {
+  .logo img {
+    width: 3rem !important;
+  }
+  .logo h3 {
+    font-size: 1.5rem !important;
+  }
   .linkContainer {
     display: block;
     position: fixed;
@@ -59,6 +65,7 @@
   }
 }
 @media (min-width: 500px){
+
   .linkContainer {
     transform: none !important;
   }
