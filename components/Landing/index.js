@@ -6,6 +6,10 @@ import scrollSvg from "../../public/scroll.svg";
 import Countdown from "../countdown/";
 import Register from "../register/";
 import About from "../about/";
+
+import * as fa from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Landing = () => {
   return (
     <div className={styles.container}>
@@ -22,6 +26,14 @@ const Landing = () => {
         A 60-Hour Student Lead Hackathon Designed For{" "}
         <span className={styles.text}>Everybody.</span>
       </p>
+      <div className={styles.scrollDown}>
+        <div>
+          <span className={styles.scrollMsg1}>Scroll Down <span className={styles.scrollArr}>-&gt;</span></span>
+        </div>
+        <div>
+          <span className={styles.scrollMsg2}>Scroll Down <span className={styles.scrollArr}>-&gt;</span></span>
+        </div>
+      </div>
       <div className={styles.horizontalRule}>
         <div className={styles.line} />
         <img
