@@ -4,7 +4,8 @@ import Image from "next/image";
 import Svg from "../../public/logo.svg";
 import scrollSvg from "../../public/scroll.svg";
 import Countdown from "../countdown/";
-
+import Register from "../register/";
+import About from "../about/";
 const Landing = () => {
   return (
     <div className={styles.container}>
@@ -14,9 +15,8 @@ const Landing = () => {
           EVERYONE.
         </h1>
       </span>
-      <div className={styles.rightGradient} />
-      <div className={styles.leftGradient} />
-      <button className={styles.button}>Register Now</button>
+
+      <Register />
       <h3 className={styles.date}>October 12, 2021</h3>
       <p>
         A 60-Hour Student Lead Hackathon Designed For{" "}
@@ -43,6 +43,8 @@ const Landing = () => {
         />
         Scroll down
       </div>
+      <About />
+
     </div>
   );
 };
