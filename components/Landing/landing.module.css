@@ -14,7 +14,7 @@
 }
 
 .topHeading {
-  font-size: min(7vw, 125.4px);
+  font-size: min(7vw, 100px);
 }
 
 .everyoneHeading {
@@ -48,4 +48,40 @@
   border: 2px solid white;
   height: 2px;
   width: 20vw;
+}
+
+.scrollSvgContainer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.svg {
+  margin-right: 0.5rem;
+}
+
+.rightGradient {
+  position: absolute;
+  /* z-index: -1; */
+  right: 0;
+  top: 20vh;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid white;
+  background: #ff9900;
+  filter: blur(100vw);
+  opacity: 0.4;
+}
+
+.leftGradient {
+  position: absolute;
+  /* z-index: -1; */
+  left: 0;
+  top: 25vh;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid white;
+  background: #1576fd;
+  filter: blur(100vw);
+  opacity: 0.3;
 }

@@ -1,0 +1,38 @@
+.container {
+  margin-top: 2rem;
+  white-space: no-wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.itemContainer {
+  margin-bottom: 2.5rem;
+  min-width: 327.9px;
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  width: 30%;
+  background-image: linear-gradient(180deg, #a62c58 0%, #432c58 81.09%);
+}
+
+.header {
+  font-weight: bolder;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background: linear-gradient(180deg, #a62c58 0%, #432c58 100%);
+}

@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./landing.module.css";
+import Image from "next/image";
 import Svg from "../../public/logo.svg";
+import scrollSvg from "../../public/scroll.svg";
 import Countdown from "../countdown/";
 
 const Landing = () => {
@@ -11,6 +14,8 @@ const Landing = () => {
           EVERYONE.
         </h1>
       </span>
+      <div className={styles.rightGradient} />
+      <div className={styles.leftGradient} />
       <button className={styles.button}>Register Now</button>
       <h3 className={styles.date}>October 12, 2021</h3>
       <p>
@@ -20,7 +25,7 @@ const Landing = () => {
       <div className={styles.horizontalRule}>
         <div className={styles.line} />
         <img
-          src="logo.svg"
+          src={Svg.src}
           alt="logo.svg"
           style={{
             width: "4.5rem",
@@ -30,6 +35,14 @@ const Landing = () => {
         <div className={styles.line} />
       </div>
       <Countdown />
+      <div className={styles.scrollSvgContainer}>
+        <img
+          src={scrollSvg.src}
+          alt="scroll svg"
+          style={{ width: "2rem", marginRight: "0.5rem" }}
+        />
+        Scroll down
+      </div>
     </div>
   );
 };
