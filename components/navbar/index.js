@@ -1,11 +1,11 @@
-import styles from "./navbar.module.css";
+
+import {Link} from "react-scroll";
 import Image from "next/image";
-import Svg from "../../public/logo.svg";
-import Link from "next/link";
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 import * as React from "react"
+import Svg from "../../public/logo.svg";
 
 var lineLeft = styles.lineLeft;
 var lineRight = styles.lineRight;
@@ -60,7 +60,7 @@ class Navbar extends React.Component {
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="/"><h3 className={styles.logoText}>Vivid Hacks</h3></a>
-          <a href="/"><img src="logo.svg" alt="logo.svg" style={{ width: "5rem" }} /></a>
+          <a href="/"><img src={Svg.src} alt="logo.svg" style={{ width: "5rem" }} /></a>
           <a onClick={this.toggleMobileNavbar} className={styles.menuIcon} >
             <hr className={lineLeft}></hr>
             <hr className={lineMiddle}></hr>
@@ -72,13 +72,16 @@ class Navbar extends React.Component {
             <Link href="#"> DEVPOST</Link>
           </li>
           <li className={styles.link}>
-            <Link href="#"> TIMELINE</Link>
+            <Link  to="team" smooth="true" duration="500" > TEAM</Link>
           </li>
           <li className={styles.link}>
-            <Link href="#about"> ABOUT</Link>
+            <Link to="timeline" smooth="true" duration="500"> TIMELINE</Link>
           </li>
           <li className={styles.link}>
-            <Link href="#faqs"> FAQs</Link>
+            <Link to="about" smooth="true" duration="500"> ABOUT</Link>
+          </li>
+          <li className={styles.link}>
+            <Link to="faqs" smooth="true" duration="500"> FAQs</Link>
           </li>
           <li className={styles.link}>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> REGISTER</a>

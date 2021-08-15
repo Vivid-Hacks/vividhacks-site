@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.heading {
+  font-weight: bolder;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: min(5vw, 59.3px);
+  margin-bottom: 0rem;
+}
+
+.wrapper {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  align-items: center;
+}
+
+.earth {
+  width: 15vw;
+  max-width: 151.8px;
+}
+
+.para {
+  margin-left: 2rem;
+  font-size: min(5vw, 23.7167px);
+  line-height: 2rem;
+  /* line-height: 4vh; */
+}
+
+.gradient {
+  border-radius: 50%;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: #f59a6f;
+  opacity: 0.3;
+  filter: blur(100vw);
+}

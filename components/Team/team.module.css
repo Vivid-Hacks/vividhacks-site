@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gradient {
+  background: rgba(21, 118, 253, 0.31);
+  filter: blur(455px);
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  /* z-index: ; */
+  left: 0;
+}
+
+.heading {
+  font-weight: bolder;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: min(5vw, 59.3px);
+  margin-bottom: 0rem;
+}
+
+.pContainer {
+  text-align: center;
+}
+
+.para {
+  font-size: min(2vw, 24.0167px);
+}
