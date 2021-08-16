@@ -19,21 +19,17 @@ class About extends React.Component {
   handleScroll(){
       var st = window.scrollY;
       if (st > this.lastScrollTop) {
-        console.log("Downscroll");
-        console.log(this.growingLine)
-        let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length-2))+0.25;
+        let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length-2))+0.4;
         this.growingLine = {
           width : newWidth+"vw"
         }
         this.forceUpdate();
       } else {
-        console.log("UpScroll")
-        let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length-2))-0.25;
+        let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length-2))-0.4;
         if (newWidth < 0) newWidth = 0
         this.growingLine = {
           width : newWidth+"vw"
         }
-        console.log(this.growingLine)
         this.forceUpdate()
       }
       this.lastScrollTop = st;
