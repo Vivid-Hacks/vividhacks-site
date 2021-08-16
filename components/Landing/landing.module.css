@@ -110,16 +110,22 @@
   right: 2%;
 }
 .scrollArr {
-  animation: hover 1.5s infinite ease;
+  animation: hover 2s infinite;
 }
 @keyframes hover {
   0% {
     margin-left: 0;
   }
-  40% {
+  30% {
     margin-left: 0;
   }
+  50% {
+    margin-left: 20px;
+  }
   70% {
+    margin-left: 3px;
+  }
+  85% {
     margin-left: 20px;
   }
   100% {
