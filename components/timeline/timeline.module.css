@@ -7,3 +7,7 @@
   font-size: min(5vw, 59.3px);
   margin-bottom: 0rem;
 }
+.iframe {
+  height: 200px;
+  width: 100%;
+}

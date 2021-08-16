@@ -40,3 +40,8 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
+.about_faqwrapper__1e5Pe iframe {
+  width: 100% !important;
+  height: 200px !important;
+  border: none;
+}
