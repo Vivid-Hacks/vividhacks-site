@@ -6,17 +6,31 @@ import Sponsors from "../components/Sponsors";
 import Team from "../components/Team";
 import TeamGrid from "../components/TeamGrid";
 import Footer from "../components/Footer";
+import * as React from "react";
+import { render } from "react-dom";
 
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <Landing />
-      <About />
-      <Sponsors />
-      <Team />
-      <TeamGrid />
-      <Footer />
-    </>
-  );
+
+class index extends React.Component {
+  constructor(props) {
+    super(props);
+    // create a ref to store the textInput DOM element
+    this.textInput = React.createRef();
+  }
+
+  render() {
+
+    return (
+      <div>
+        <Navbar />
+        <Landing />
+        <About />
+        <Sponsors />
+        <Team />
+        <TeamGrid />
+        <Footer />
+      </div >
+    );
+  }
 }
+
+export default index
