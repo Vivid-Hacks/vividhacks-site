@@ -16,3 +16,20 @@ a {
 * {
   box-sizing: border-box;
 }
+.Typewriter__cursor {
+  color: #17a178;
+  font-size: 0;
+}
+.Typewriter__cursor::after {
+  content: "\2800";
+  width: 50px;
+  height: 50px;
+  font-size: 70px;
+  border-bottom: 8px #17a178 solid;
+}
+.Typewriter__wrapper {
+  background-color: #1e1f22;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -20,7 +20,8 @@
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/react-fontawesome": "0.1.15",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
-    "@svgr/webpack": "5.5.0"
+    "@svgr/webpack": "5.5.0",
+    "typewriter-effect": "2.18.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",

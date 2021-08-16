@@ -6,17 +6,27 @@ import scrollSvg from "../../public/scroll.svg";
 import Countdown from "../countdown/";
 import Register from "../register/";
 import About from "../about/";
+import { useState } from "react";
 
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Typewriter from 'typewriter-effect';
 
 const Landing = () => {
+
   return (
     <div className={styles.container}>
       <span className={styles.heading}>
         <h1 className={styles.topHeading}>
           Hacking for <br />
-          EVERYONE.
+          <Typewriter
+            options={{
+              strings: ['EVERYONE.', 'BEGINNERS', 'NERDS', 'EXPERTS'],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 'natural'
+            }}
+          />
         </h1>
       </span>
 
