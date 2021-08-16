@@ -24,8 +24,8 @@ a {
   content: "\2800";
   width: 50px;
   height: 50px;
-  font-size: 70px;
-  border-bottom: 8px #17a178 solid;
+  font-size: 55px;
+  border-bottom: 6px #17a178 solid;
 }
 @media (max-width: 500px){
   .Typewriter__cursor::after {
