@@ -25,9 +25,9 @@ const Footer = () => {
         <Link href="#" passHref>
           <ImLinkedin className={styles.link} />
         </Link>
-        <Link href="#" passHref>
+        <a href="https://discord.gg/yDkSt4VdNj" target="_blank">
           <SiDiscord className={styles.link} />
-        </Link>
+        </a>
       </div>
       <p className={styles.para}>Hacking For Everyone</p>
       <div className={styles.bottom}>

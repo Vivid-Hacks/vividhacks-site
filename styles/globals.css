@@ -27,6 +27,12 @@ a {
   font-size: 70px;
   border-bottom: 8px #17a178 solid;
 }
+@media (max-width: 500px){
+  .Typewriter__cursor::after {
+    font-size: 30px;
+    border-bottom: 4px #17a178 solid;
+  }
+}
 .Typewriter__wrapper {
   background-color: #1e1f22;
   border-radius: 5px;
