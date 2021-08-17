@@ -21,7 +21,7 @@ const Landing = () => {
           Hacking for <br />
           <Typewriter
             options={{
-              strings: ['EVERYONE.', 'BEGINNERS', 'NERDS', 'EXPERTS'],
+              strings: ['EVERYONE.', 'HUSTLERS.', 'LEARNERS', 'DREAMERS.'],
               autoStart: true,
               loop: true,
               deleteSpeed: 'natural'
