@@ -5,7 +5,7 @@
   align-items: center;
   background: white;
   color: black;
-  margin-top: 300px;
+  margin-top: 8rem;
 }
 
 .heading {
@@ -32,4 +32,9 @@
   font-weight: bold;
   color: white;
   margin-bottom: 6rem;
+}
+@media (max-width: 1000px){
+  .container {
+    margin-top: 300px;
+  }
 }
