@@ -34,7 +34,7 @@ const Footer = () => {
         <p className={styles.copyright}>
           2021 © Vivid Hacks. All rights reserved
         </p>
-        <Link href="/">Privcay Policy</Link>
+        <Link href="/">Privacy Policy</Link>
       </div>
     </div>
   );
