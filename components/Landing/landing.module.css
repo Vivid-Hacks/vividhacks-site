@@ -142,3 +142,15 @@
     display: none;
   }
 }
+.accent1 {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  width: 600px;
+}
+.accent2 {
+  z-index: 0;
+  position: absolute;
+  width: 600px;
+  right: 0;
+}

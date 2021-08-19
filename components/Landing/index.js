@@ -17,6 +17,8 @@ const Landing = () => {
   return (
     <div className={styles.container}>
       <span className={styles.heading}>
+        <img src="/accent1.svg" className={styles.accent1}></img>
+        <img src="/accent2.svg" className={styles.accent2}></img>
         <h1 className={styles.topHeading}>
           Hacking for <br />
           <Typewriter
