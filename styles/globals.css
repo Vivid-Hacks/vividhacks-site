@@ -30,7 +30,7 @@ a {
 }
 @media (max-width: 500px){
   .Typewriter__cursor::after {
-    font-size: 30px;
+    font-size: 5px;
     border-bottom: 4px #17a178 solid;
   }
 }

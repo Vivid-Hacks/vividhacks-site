@@ -1,5 +1,5 @@
 
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -70,22 +70,22 @@ class Navbar extends React.Component {
         </div>
         <ul className={this.menu} style={this.menuStyling}>
           <li className={styles.link}>
-            <Link href="#"> DEVPOST</Link>
+            <a href="https://vividhacks.devpost.com/" className={styles.alink} target="_blank"> DEVPOST</a>
           </li>
           <li className={styles.link}>
-            <Link  to="team" smooth="true" duration="500" > TEAM</Link>
+            <Link to="team" smooth="true" duration="500"> TEAM</Link>
           </li>
           <li className={styles.link}>
-            <Link to="timeline" smooth="true" duration="500"> TIMELINE</Link>
+            <Link to="timeline" smooth="true" duration="500" className={styles.alink}> TIMELINE</Link>
           </li>
           <li className={styles.link}>
-            <Link to="about" smooth="true" duration="500"> ABOUT</Link>
+            <Link to="about" smooth="true" duration="500" className={styles.alink}> ABOUT</Link>
           </li>
           <li className={styles.link}>
-            <Link to="faqs" smooth="true" duration="500"> FAQs</Link>
+            <Link to="faqs" smooth="true" duration="500" className={styles.alink}> FAQs</Link>
           </li>
           <li className={styles.link}>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> REGISTER</a>
+            <a href="https://vividhacks.devpost.com/" target="_blank" className={styles.alink}> REGISTER</a>
           </li>
         </ul>
       </div>

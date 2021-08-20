@@ -36,6 +36,11 @@
 .container ul li {
   cursor: pointer;
 }
+.container ul li:hover {
+  transition: all 0.3s ;
+  color: #ff9900 !important;
+}
+
 @media (max-width: 500px) {
   .logo img {
     width: 3rem !important;

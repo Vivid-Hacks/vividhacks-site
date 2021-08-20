@@ -32,9 +32,9 @@ const Footer = () => {
       <p className={styles.para}>Hacking For Everyone</p>
       <div className={styles.bottom}>
         <p className={styles.copyright}>
-          2021 © Vivid Hacks. All rights reserved
+          2021 © Vivid Hacks. All rights reserved &nbsp; |
         </p>
-        <Link href="/">Privacy Policy</Link>
+        <Link href="/privacy-policy">Privacy Policy</Link>
       </div>
     </div>
   );

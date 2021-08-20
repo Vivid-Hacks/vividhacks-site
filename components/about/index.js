@@ -47,7 +47,7 @@ class About extends React.Component {
 
     }
     return (
-      <div className={styles.body} onClick={this.handleScroll}>
+      <div id="about" className={styles.body} onClick={this.handleScroll}>
         <div className={styles.division}>
           <hr className={styles.growingLine} style={this.growingLine}></hr>
         </div>
