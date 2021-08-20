@@ -48,13 +48,13 @@ const team = [
     website: "me.person"
   },
   {
-    post: "Organiser",
-    name: "ABC",
+    post: "Organizer",
+    name: "Rajan Agarwal",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
-    yrsTrappedInVim: 69,
-    website: "asdfasdf"
+    favoriteLang: "ReactJS",
+    yrsTrappedInVim: 16,
+    website: "heyrajan.com"
   },
 ];
 const Tg = () => {
