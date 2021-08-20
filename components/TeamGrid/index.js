@@ -49,7 +49,7 @@ const team = [
   },
   {
     post: "Organizer",
-    name: "Rajan Agarwal",
+    name: "Rajan",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "ReactJS",
