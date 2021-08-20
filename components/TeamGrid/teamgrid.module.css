@@ -55,7 +55,7 @@
 .backStats {
   font-size: 1em;
   position: absolute;
-  transform: translate(100px, -120px);
+  transform: translate(80px, -120px);
 }
 .flipContainer {
   perspective: 1000px;

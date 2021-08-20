@@ -12,7 +12,7 @@ const team = [
   },
   {
     post: "Organiser",
-    name: "Eric Zhu",
+    name: "Eddy Zhu",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
@@ -33,9 +33,9 @@ const team = [
     post: "Organiser",
     name: "Joshua Zou",
     img: "/rick.png",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
-    yrsTrappedInVim: 69,
+    github: "https://github.com/Joshua-Zou",
+    favoriteLang: "Node/C++",
+    yrsTrappedInVim: 14,
     website: "https://joshuaz.dev"
   },
   {
