@@ -147,6 +147,7 @@
   position: absolute;
   left: 0;
   width: 600px;
+  max-width: 100vw;
 }
 .accent2 {
   z-index: 0;
