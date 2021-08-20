@@ -4,7 +4,7 @@ const team = [
   {
     post: "Organiser",
     name: "Vansh Gehlot",
-    img: "https://cdn.discordapp.com/attachments/876623460510605345/878066462324035654/unknown.png",
+    img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
@@ -13,7 +13,7 @@ const team = [
   {
     post: "Organiser",
     name: "Eric Zhu",
-    img: "https://cdn.discordapp.com/attachments/876623460510605345/878066462324035654/unknown.png",
+    img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
@@ -23,7 +23,7 @@ const team = [
   {
     post: "Organiser",
     name: "Ivion",
-    img: "https://cdn.discordapp.com/attachments/876623460510605345/878066462324035654/unknown.png",
+    img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
@@ -32,7 +32,7 @@ const team = [
   {
     post: "Organiser",
     name: "Joshua Zou",
-    img: "https://cdn.discordapp.com/attachments/876623460510605345/878066462324035654/unknown.png",
+    img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
@@ -41,7 +41,7 @@ const team = [
   {
     post: "Organiser",
     name: "Me",
-    img: "https://cdn.discordapp.com/attachments/876623460510605345/878066462324035654/unknown.png",
+    img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
@@ -50,7 +50,7 @@ const team = [
   {
     post: "Organiser",
     name: "ABC",
-    img: "https://cdn.discordapp.com/attachments/876623460510605345/878066462324035654/unknown.png",
+    img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
