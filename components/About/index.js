@@ -65,7 +65,7 @@ class About extends React.Component {
                 <Timeline />
               </div>
             </div>
-            <iframe src="https://www.youtube.com/watch?v=KUIigF_7P5c&ab_channel=Fredward" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KUIigF_7P5c" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </div>
