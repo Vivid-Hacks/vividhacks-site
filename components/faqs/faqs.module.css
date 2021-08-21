@@ -1,0 +1,24 @@
+.container iframe {
+    border: none;
+    width: 50vw;
+    height: 600px;
+    overflow: visible;  
+}
+@media (max-width: 500px) {
+    .container iframe {
+        width: 100vw;
+    }
+}
+.container {
+    overflow: visible;  
+}
+.container iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.container iframe {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

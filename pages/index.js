@@ -5,6 +5,7 @@ import Timeline from "../components/Timeline";
 import Sponsors from "../components/Sponsors";
 import Team from "../components/Team";
 import TeamGrid from "../components/TeamGrid";
+import Faqs from "../components/faqs"
 import Footer from "../components/Footer";
 import * as React from "react";
 import { render } from "react-dom";
@@ -27,6 +28,7 @@ class index extends React.Component {
         <Sponsors />
         <Team />
         <TeamGrid />
+        <Faqs />
         <Footer />
       </div >
     );
