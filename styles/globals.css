@@ -53,3 +53,20 @@ a {
 .row-title-text {
   margin-left: 15px;
 }
+
+.fade {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
