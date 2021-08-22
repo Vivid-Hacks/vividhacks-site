@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 .container {
   width: 80%;
   margin-left: auto;
@@ -90,7 +90,7 @@
 .scrollDown {
   text-align: center;
   font-size: 1.2em;
-  font-family: 'La Belle Aurore', cursive !important;
+  font-family: "La Belle Aurore", cursive !important;
   position: absolute;
   top: 88vh;
   width: 99vw;
@@ -132,12 +132,12 @@
     margin-left: 0px;
   }
 }
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .scrollDown {
     display: none;
   }
 }
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
   .scrollSvgContainer {
     display: none;
   }
@@ -154,4 +154,17 @@
   position: absolute;
   width: 600px;
   right: 0;
+}
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

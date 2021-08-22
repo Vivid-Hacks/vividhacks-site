@@ -47,7 +47,8 @@
   transition: all 0.1s ease;
   font-size: 1.5em;
 }
-.offset:hover, .offset:focus .buttonSpan {
+.offset:hover,
+.offset:focus .buttonSpan {
   position: inherit;
 }
 .offset {
@@ -60,12 +61,25 @@
 .modal {
   position: fixed;
 }
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .buttonSpan {
     font-size: 1.2em;
   }
   .offset {
     margin-top: 40px;
     margin-bottom: 25px;
+  }
+}
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

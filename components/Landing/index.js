@@ -15,6 +15,7 @@ import Typewriter from 'typewriter-effect';
 const Landing = () => {
 
   return (
+    <div className={styles.animate}>
     <div className={styles.container}>
       <span className={styles.heading}>
         <img src="/accent1.svg" className={styles.accent1}></img>
@@ -67,6 +68,7 @@ const Landing = () => {
         />
         Scroll down
       </div>
+    </div>
     </div>
   );
 };

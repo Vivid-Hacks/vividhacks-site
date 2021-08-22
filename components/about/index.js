@@ -47,6 +47,7 @@ class About extends React.Component {
 
     }
     return (
+      <div className={styles.animate}>
       <div id="about" className={styles.body} onClick={this.handleScroll}>
         <div className={styles.division}>
           <hr className={styles.growingLine} style={this.growingLine}></hr>
@@ -68,6 +69,7 @@ class About extends React.Component {
             <iframe src="https://www.youtube.com/embed/KUIigF_7P5c" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
+      </div>
       </div>
     );
   }

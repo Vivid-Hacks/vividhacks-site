@@ -2,6 +2,7 @@ import styles from "./team.module.css";
 
 const Team = () => {
   return (
+    <div className={styles.animate}>
     <div id="team" className={styles.container}>
       <div className={styles.gradient} />
       <h3 className={styles.heading}>MEET OUR TEAM</h3>
@@ -15,6 +16,7 @@ const Team = () => {
           share the vision of our community.
         </p>
       </div>
+    </div>
     </div>
   );
 };

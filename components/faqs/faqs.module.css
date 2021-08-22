@@ -1,24 +1,37 @@
 .container iframe {
-    border: none;
-    width: 50vw;
-    height: 600px;
-    overflow: visible;  
+  border: none;
+  width: 50vw;
+  height: 600px;
+  overflow: visible;
 }
 @media (max-width: 500px) {
-    .container iframe {
-        width: 100vw;
-    }
+  .container iframe {
+    width: 100vw;
+  }
 }
 .container {
-    overflow: visible;  
+  overflow: visible;
 }
 .container iframe::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .container iframe {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

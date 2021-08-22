@@ -30,3 +30,17 @@
 .para {
   font-size: min(2vw, 24.0167px);
 }
+
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

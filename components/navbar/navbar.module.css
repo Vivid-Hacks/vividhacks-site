@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 .container ul li:hover {
-  transition: all 0.3s ;
+  transition: all 0.3s;
   color: #ff9900 !important;
 }
 
@@ -68,39 +68,38 @@
     margin-top: 15px;
   }
   .link::before {
-    content: "•"
+    content: "•";
   }
 }
-@media (min-width: 500px){
-
+@media (min-width: 500px) {
   .linkContainer {
     transform: none !important;
   }
 }
 .menuIcon {
-	height: 30px;
-	width: 30px;
-	cursor: pointer;
-	display: block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: block;
 }
 .menuIcon hr {
-	height: 2px;
-	width: 30px;
-	display: block;
-	background-color: #fff;
-	margin-bottom: 7px;
-	cursor: pointer;
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #fff;
+  margin-bottom: 7px;
+  cursor: pointer;
 }
 .lineLeft {
-	width: 16.5px !important;
+  width: 16.5px !important;
   float: left !important;
-	transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .lineRight {
   margin-top: 0;
-	width: 16.5px !important;
-	float: right;
-	transition: all 200ms linear;
+  width: 16.5px !important;
+  float: right;
+  transition: all 200ms linear;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -113,7 +112,7 @@
 .lineLeftClose {
   transition: all 0.1s linear !important;
   transform-origin: left;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 .lineRightClose {
   transition: all 0.1s linear !important;
@@ -125,4 +124,18 @@
 }
 .lineMiddle {
   color: inherit;
+}
+
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -8,8 +8,10 @@ const faq = [
 ];
 const Tg = () => {
     return (
+        <div className={styles.animate}>
         <div className={styles.container}>
             FAQS
+        </div>
         </div>
     );
 };

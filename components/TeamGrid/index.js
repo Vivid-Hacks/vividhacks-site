@@ -59,6 +59,7 @@ const team = [
 ];
 const Tg = () => {
   return (
+    <div className={styles.animate}>
     <div className={styles.container}>
       {team.map(({ post, name, img, github, favoriteLang, yrsTrappedInVim, website }, i) => {
         return (
@@ -82,6 +83,7 @@ const Tg = () => {
           </div>
         );
       })}
+    </div>
     </div>
   );
 };

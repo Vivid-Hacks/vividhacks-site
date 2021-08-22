@@ -58,6 +58,7 @@ class Navbar extends React.Component {
   render() {
 
     return (
+      <div className={styles.animate}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="/"><h3 className={styles.logoText}>Vivid Hacks</h3></a>
@@ -88,6 +89,7 @@ class Navbar extends React.Component {
             <a href="https://vividhacks.devpost.com/" target="_blank" className={styles.alink}> REGISTER</a>
           </li>
         </ul>
+      </div>
       </div>
     );
   }

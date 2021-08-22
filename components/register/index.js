@@ -8,7 +8,7 @@ function register() {
 
 const Register = () => {
     return (
-        <div>
+        <div className={styles.animate}>
             <button onClick={register} className={styles.offset}><span className={styles.buttonSpan}>Register Now</span></button>
             <div className={styles.invisible, styles.modal}>
                 asdf

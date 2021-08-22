@@ -24,6 +24,7 @@ const Countdown = () => {
   }, 1000);
 
   return (
+    <div className={styles.animate}>
     <div className={styles.container}>
       <div className={styles.box}>
         <p className={styles.timerText}>{day}</p>
@@ -40,6 +41,7 @@ const Countdown = () => {
       <div className={styles.box}>
         <p className={styles.timerText}>{sec}</p>
         <p className={styles.placeholder}>Seconds</p>
+      </div>
       </div>
     </div>
   );

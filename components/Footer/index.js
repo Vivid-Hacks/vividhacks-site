@@ -8,6 +8,7 @@ import { SiDiscord } from "react-icons/si";
 
 const Footer = () => {
   return (
+    <div className={styles.animate}>
     <div className={styles.container}>
       <img
         src="logo.svg"
@@ -36,6 +37,7 @@ const Footer = () => {
         </p>
         <Link href="/privacy-policy">Privacy Policy</Link>
       </div>
+    </div>
     </div>
   );
 };

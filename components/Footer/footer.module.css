@@ -31,3 +31,17 @@
   margin-right: 1rem;
   /* margin-top: -1rem; */
 }
+
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
