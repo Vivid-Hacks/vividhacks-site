@@ -38,3 +38,32 @@
     opacity: 1;
   }
 }
+
+.days {
+  animation: leftToRight 1.5s;
+}
+.seconds {
+  animation: rightToLeft 1.5s;
+}
+.minutes {
+  animation: rightToLeft 0.8s;
+}
+.hours {
+  animation: leftToRight 0.8s;
+}
+@keyframes leftToRight {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes rightToLeft {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: none;
+  }
+}

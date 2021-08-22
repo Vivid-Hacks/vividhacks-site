@@ -26,19 +26,19 @@ const Countdown = () => {
   return (
     <div className={styles.animate}>
     <div className={styles.container}>
-      <div className={styles.box}>
+      <div className={`${styles.box} ${styles.days}`}>
         <p className={styles.timerText}>{day}</p>
         <p className={styles.placeholder}>Days</p>
       </div>
-      <div className={styles.box}>
+      <div className={`${styles.box} ${styles.hours}`}>
         <p className={styles.timerText}>{hour}</p>
         <p className={styles.placeholder}>Hours</p>
       </div>
-      <div className={styles.box}>
+      <div className={`${styles.box} ${styles.minutes}`}>
         <p className={styles.timerText}>{min}</p>
         <p className={styles.placeholder}>Minutes</p>
       </div>
-      <div className={styles.box}>
+      <div className={`${styles.box} ${styles.seconds}`}>
         <p className={styles.timerText}>{sec}</p>
         <p className={styles.placeholder}>Seconds</p>
       </div>

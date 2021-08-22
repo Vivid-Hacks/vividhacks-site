@@ -71,15 +71,15 @@
   }
 }
 .animate {
-  animation: fadeIn 2s;
+  animation: moveUp 1s;
   opacity: 1;
 }
 
-@keyframes fadeIn {
+@keyframes moveUp {
   from {
-    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    opacity: 1;
+    transform: none;
   }
 }
