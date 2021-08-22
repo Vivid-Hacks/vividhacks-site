@@ -52,7 +52,7 @@ export default function Faqs () {
 
     return (
         <div className={styles.animate}>
-        <div className={styles.container}>
+        <div className={styles.container} id="faqs">
             <Faq
                 data={data}
                 styles={stylesX}
