@@ -1,27 +1,4 @@
-.container iframe {
-  border: none;
-  width: 50vw;
-  height: 600px;
-  overflow: visible;
-}
-@media (max-width: 500px) {
-  .container iframe {
-    width: 100vw;
-  }
-}
-.container {
-  overflow: visible;
-}
-.container iframe::-webkit-scrollbar {
-  display: none;
-}
 
-.container iframe {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
 .animate {
   animation: fadeIn 2s;
   opacity: 1;
@@ -34,4 +11,19 @@
   to {
     opacity: 1;
   }
+}
+.container {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 500px){
+    .container {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }

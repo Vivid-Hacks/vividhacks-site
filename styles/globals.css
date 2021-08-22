@@ -45,3 +45,10 @@ a {
   height: 200px !important;
   border: none;
 }
+.row-content-text::before {
+  content: "hiboi";
+  opacity: 0;
+}
+.row-title-text {
+  margin-left: 15px;
+}
