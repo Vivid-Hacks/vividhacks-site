@@ -40,16 +40,16 @@
 }
 
 .days {
-  animation: leftToRight 3s;
+  animation: leftToRight 1.5s;
 }
 .seconds {
-  animation: rightToLeft 3s;
+  animation: rightToLeft 1.5s;
 }
 .minutes {
-  animation: rightToLeft 1.2s;
+  animation: rightToLeft 1s;
 }
 .hours {
-  animation: leftToRight 1.2s;
+  animation: leftToRight 1s;
 }
 @keyframes leftToRight {
   from {
