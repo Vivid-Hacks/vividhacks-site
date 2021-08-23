@@ -11,14 +11,8 @@ import * as React from "react";
 import { render } from "react-dom";
 
 
-class index extends React.Component {
-  constructor(props) {
-    super(props);
-    // create a ref to store the textInput DOM element
-    this.textInput = React.createRef();
-  }
+const index = () => {
 
-  render() {
 
     return (
       <div>
@@ -32,7 +26,6 @@ class index extends React.Component {
         <Footer />
       </div >
     );
-  }
 }
 
 export default index
