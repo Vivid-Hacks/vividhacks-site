@@ -37,7 +37,7 @@ const Footer = () => {
           </p>
           <Link href="/privacy-policy">Privacy Policy</Link>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <Link href="/tos">ToS</Link >
+          <Link href="/tos">ToS</Link>
         </div>
       </div>
     </div>
