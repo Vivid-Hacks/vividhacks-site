@@ -10,19 +10,20 @@ const team = [
     yrsTrappedInVim: 69,
     website: "idk"
   },
+
   {
-    post: "Organiser",
+    post: "Lead-Organiser",
     name: "Eddy Zhu",
-    img: "/rick.png",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
-    yrsTrappedInVim: 69,
+    img: "/EddyPFP.jpg",
+    github: "https://github.com/Tronbo",
+    favoriteLang: "C++",
+    yrsTrappedInVim: 12,
     website: "https://eddyzhu.netlify.app/"
   },
 
   {
     post: "Organiser",
-    name: "Ivion",
+    name: "Ivione",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
@@ -70,13 +71,16 @@ const Tg = () => {
                 <img className={styles.img} src={img} alt="img" />
                 <div className={styles.name}>{name}</div>
               </div>
+
               <div className={styles.back}>
               <img className={styles.img} src={img} alt="img" />
                 <div className={styles.backStats}>
                   <div><span>Github: </span><a href={github} target="_blank" className={styles.info}>___Click_Me___</a></div>
                   <div className={styles.key}><span>Website: </span><a href={website} target="_blank" className={styles.info}>___Click_Me___</a></div>
+
                   <div className={styles.key}><span>Favorite Language: </span><span className={styles.info}>{favoriteLang}</span></div>
                   <div className={styles.key}><span>Years trapped in vim: </span><span className={styles.info}>{yrsTrappedInVim}</span></div>
+
                 </div>
               </div>
             </div>

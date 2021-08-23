@@ -86,7 +86,7 @@ class Navbar extends React.Component {
             <Link to="faqs" smooth="true" duration="500" className={styles.alink}> FAQs</Link>
           </li>
           <li className={styles.link}>
-            <a href="https://vividhacks.devpost.com/" target="_blank" className={styles.alink}> REGISTER</a>
+            <a href="https://discord.gg/HGXwx5A8dU" target="_blank" className={styles.alink}> COMMUNITY</a>
           </li>
         </ul>
       </div>
