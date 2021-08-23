@@ -15,7 +15,7 @@ class index extends React.Component {
         return (
             <div>
                 <Navbar />
-                <div style={{ paddingLeft: "20px", paddingRight: "20px", backgroundColor: "#292929"}}>
+                <div style={{ paddingLeft: "20px", paddingLeft: "20px"}}>
                     <h1>Privacy Policy</h1>
                     <p>Last updated: August 20, 2021</p>
                     <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>

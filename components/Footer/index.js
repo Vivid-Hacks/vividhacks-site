@@ -36,6 +36,8 @@ const Footer = () => {
             2021 © Vivid Hacks. All rights reserved &nbsp; |
           </p>
           <Link href="/privacy-policy">Privacy Policy</Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <Link href="/tos">ToS</Link>
         </div>
       </div>
     </div>
