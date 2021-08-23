@@ -7,10 +7,10 @@ const team = [
     name: "Vansh Gehlot",
     img: "https://cdn.discordapp.com/attachments/870833961218236450/879443381565161533/Vansh.png.png",
     github: "https://github.com/VanshGehlot",
-    favoriteLang: "C++/HTML",
+    favoriteLang: "C++L",
     yrsTrappedInVim: 19,
     website: "https://letshack.me/",
-    color: "black"
+    color: "black",
   },
 
   {
@@ -18,21 +18,21 @@ const team = [
     name: "Eddy Zhu",
     img: "/EddyPFP.jpg",
     github: "https://github.com/Tronbo",
-    favoriteLang: "Python",
-    yrsTrappedInVim: 13,
+    favoriteLang: "C++, C#",
+    yrsTrappedInVim: 12,
     website: "https://eddyzhu.netlify.app/",
-    color: "white"
+    color: "white",
   },
 
   {
     post: "Organizer",
-    name: "Ivion",
+    name: "Ivione",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
     website: "idk",
-    color: "white"
+    color: "white",
   },
   {
     post: "Organizer",
@@ -42,7 +42,7 @@ const team = [
     favoriteLang: "Node/C++",
     yrsTrappedInVim: 14,
     website: "https://joshuaz.dev",
-    color: "white"
+    color: "white",
   },
   {
     post: "Organizer",
@@ -52,7 +52,7 @@ const team = [
     favoriteLang: "urmom",
     yrsTrappedInVim: 15,
     website: "me.person",
-    color: "white"
+    color: "white",
   },
   {
     post: "Organizer",
@@ -62,7 +62,7 @@ const team = [
     favoriteLang: "ReactJS",
     yrsTrappedInVim: 16,
     website: "https://devpost.com/itsrajan",
-    color: "white"
+    color: "white",
   },
 ];
 class Tg extends React.Component {
@@ -72,52 +72,100 @@ class Tg extends React.Component {
     this.containerRef = React.createRef();
   }
   handleScroll() {
-
     const element = this.containerRef.current;
-    if (element){
+    if (element) {
       const windowOffsetTop = window.innerHeight + window.scrollY;
-      
+
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
-        this.containerRef.current.classList.add("fade")
-      }else{
-        this.containerRef.current.classList.remove("fade")
+        this.containerRef.current.classList.add("fade");
+      } else {
+        this.containerRef.current.classList.remove("fade");
       }
     }
   }
-  render(){
-    if (typeof window === 'object') {
+  render() {
+    if (typeof window === "object") {
       document.addEventListener("scroll", this.handleScroll, true);
     }
     return (
       <div ref={this.containerRef}>
-      <div className={styles.container}>
-        {team.map(({ post, name, img, github, favoriteLang, yrsTrappedInVim, website, color }, i) => {
-          return (
-            <div key={i} className={`${styles.itemContainer} ${styles.flipContainer}`}>
-              <div className={`${styles.flipper}`}>
-                <div className={styles.front}>
-                  <div className={styles.header} style={{color: color}}>{post}</div>
-                  <img className={styles.img} src={img} alt="img" />
-                  <div className={styles.name} style={{color: color}}>{name}</div>
-                </div>
-                <div className={styles.back}>
-                <img className={styles.img} src={img} alt="img" />
-                  <div className={styles.backStats}>
-                    <div><span style={{color: color}}>Github: </span><a href={github} target="_blank" className={styles.info}>___Click_Me___</a></div>
-                    <div className={styles.key}><span style={{color: color}}>Website: </span><a href={website} target="_blank" className={styles.info}>___Click_Me___</a></div>
-                    <div className={styles.key}><span style={{color: color}}>Favorite Language: </span><span className={styles.info}>{favoriteLang}</span></div>
-                    <div className={styles.key}><span style={{color: color}}>Years trapped in vim: </span><span className={styles.info}>{yrsTrappedInVim}</span></div>
+        <div className={styles.container}>
+          {team.map(
+            (
+              {
+                post,
+                name,
+                img,
+                github,
+                favoriteLang,
+                yrsTrappedInVim,
+                website,
+                color,
+              },
+              i
+            ) => {
+              return (
+                <div
+                  key={i}
+                  className={`${styles.itemContainer} ${styles.flipContainer}`}
+                >
+                  <div className={`${styles.flipper}`}>
+                    <div className={styles.front}>
+                      <div className={styles.header} style={{ color: color }}>
+                        {post}
+                      </div>
+                      <img className={styles.img} src={img} alt="img" />
+                      <div className={styles.name} style={{ color: color }}>
+                        {name}
+                      </div>
+                    </div>
+                    <div className={styles.back}>
+                      <img className={styles.img} src={img} alt="img" />
+                      <div className={styles.backStats}>
+                        <div>
+                          <span style={{ color: color }}>Github: </span>
+                          <a
+                            href={github}
+                            target="_blank"
+                            className={styles.info}
+                          >
+                            Click Me
+                          </a>
+                        </div>
+                        <div className={styles.key}>
+                          <span style={{ color: color }}>Website: </span>
+                          <a
+                            href={website}
+                            target="_blank"
+                            className={styles.info}
+                          >
+                            Click Me
+                          </a>
+                        </div>
+                        <div className={styles.key}>
+                          <span style={{ color: color }}>
+                            Favorite Language:{" "}
+                          </span>
+                          <span className={styles.info}>{favoriteLang}</span>
+                        </div>
+                        <div className={styles.key}>
+                          <span style={{ color: color }}>
+                            Years trapped in vim:{" "}
+                          </span>
+                          <span className={styles.info}>{yrsTrappedInVim}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+              );
+            }
+          )}
+        </div>
       </div>
     );
   }
-};
+}
 
 export default Tg;
