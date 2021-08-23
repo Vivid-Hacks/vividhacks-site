@@ -153,3 +153,10 @@ a {
 a {
   cursor: pointer;
 }
+
+#navbar {
+  background-color: black !important;
+}
+.MsoNormal {
+  color: black;
+}

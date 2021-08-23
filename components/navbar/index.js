@@ -61,7 +61,7 @@ class Navbar extends React.Component {
     if (typeof window === 'object') {
       if (window.location.pathname === "/") {
         return (
-          <div className={styles.animate}>
+        <div className={`${styles.animate}`}>
             <div className={styles.container}>
               <div className={styles.logo}>
                 <CrossLink href="/"><a><h3 className={styles.logoText}>Vivid Hacks</h3></a></CrossLink>
