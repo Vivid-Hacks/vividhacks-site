@@ -81,7 +81,7 @@ a {
 }
 
 #nprogress .bar {
-  background: linear-gradient(#1380c4, #BD8BE5);
+  background: linear-gradient(to left, #1380c4, #BD8BE5);
 
   position: fixed;
   z-index: 1031;
