@@ -18,15 +18,16 @@ class About extends React.Component {
   handleScroll() {
 
     const element = this.containerRef.current;
-    const windowOffsetTop = window.innerHeight + window.scrollY;
-
-    const elementBoxOffsetTop = element.offsetTop;
-    if (windowOffsetTop >= elementBoxOffsetTop) {
-      this.containerRef.current.classList.add("fade")
-    }else{
-      this.containerRef.current.classList.remove("fade")
+    if (element){
+      const windowOffsetTop = window.innerHeight + window.scrollY;
+      
+      const elementBoxOffsetTop = element.offsetTop;
+      if (windowOffsetTop >= elementBoxOffsetTop) {
+        this.containerRef.current.classList.add("fade")
+      }else{
+        this.containerRef.current.classList.remove("fade")
+      }
     }
-
     var st = window.scrollY;
     if (st > this.lastScrollTop) {
       let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length - 2)) + 0.4;
