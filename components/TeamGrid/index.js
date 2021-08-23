@@ -5,20 +5,22 @@ const team = [
   {
     post: "Organizer",
     name: "Vansh Gehlot",
-    img: "/rick.png",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
-    yrsTrappedInVim: 69,
-    website: "idk"
+    img: "https://cdn.discordapp.com/attachments/870833961218236450/879443381565161533/Vansh.png.png",
+    github: "https://github.com/VanshGehlot",
+    favoriteLang: "C++/HTML",
+    yrsTrappedInVim: 19,
+    website: "https://letshack.me/",
+    color: "black"
   },
   {
     post: "Organizer",
     name: "Eddy Zhu",
-    img: "https://avatars.githubusercontent.com/u/67758739?s=64&v=4",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    img: "https://media-exp1.licdn.com/dms/image/C5603AQFcolJ2TmEmLQ/profile-displayphoto-shrink_200_200/0/1623547413965?e=1635379200&v=beta&t=U8spil8Usjg9ZlzgdBfWfg-7NI7zghtkqH8Iz3-2Yws",
+    github: "https://github.com/Tronbo",
     favoriteLang: "Python",
     yrsTrappedInVim: 13,
-    website: "https://eddyzhu.netlify.app/"
+    website: "https://eddyzhu.netlify.app/",
+    color: "white"
   },
 
   {
@@ -28,34 +30,38 @@ const team = [
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
     yrsTrappedInVim: 69,
-    website: "idk"
+    website: "idk",
+    color: "white"
   },
   {
     post: "Organizer",
     name: "Joshua Zou",
-    img: "/rick.png",
+    img: "/joshua.png",
     github: "https://github.com/Joshua-Zou",
     favoriteLang: "Node/C++",
     yrsTrappedInVim: 14,
-    website: "https://joshuaz.dev"
+    website: "https://joshuaz.dev",
+    color: "white"
   },
   {
     post: "Organizer",
-    name: "Me",
-    img: "/rick.png",
+    name: "Manish",
+    img: "https://cdn.discordapp.com/avatars/720865999242657792/970b391d9ce6daff5f8ec6a94930fe84.webp?size=256",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     favoriteLang: "urmom",
-    yrsTrappedInVim: 69,
-    website: "me.person"
+    yrsTrappedInVim: 15,
+    website: "me.person",
+    color: "white"
   },
   {
     post: "Organizer",
     name: "Rajan",
-    img: "/rick.png",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
+    github: "https://github.com/itsrajan",
     favoriteLang: "ReactJS",
     yrsTrappedInVim: 16,
-    website: "heyrajan.com"
+    website: "https://devpost.com/itsrajan",
+    color: "white"
   },
 ];
 class Tg extends React.Component {
@@ -85,22 +91,22 @@ class Tg extends React.Component {
     return (
       <div ref={this.containerRef}>
       <div className={styles.container}>
-        {team.map(({ post, name, img, github, favoriteLang, yrsTrappedInVim, website }, i) => {
+        {team.map(({ post, name, img, github, favoriteLang, yrsTrappedInVim, website, color }, i) => {
           return (
             <div key={i} className={`${styles.itemContainer} ${styles.flipContainer}`}>
               <div className={`${styles.flipper}`}>
                 <div className={styles.front}>
-                  <div className={styles.header}>{post}</div>
+                  <div className={styles.header} style={{color: color}}>{post}</div>
                   <img className={styles.img} src={img} alt="img" />
-                  <div className={styles.name}>{name}</div>
+                  <div className={styles.name} style={{color: color}}>{name}</div>
                 </div>
                 <div className={styles.back}>
                 <img className={styles.img} src={img} alt="img" />
                   <div className={styles.backStats}>
-                    <div><span>Github: </span><a href={github} target="_blank" className={styles.info}>___Click_Me___</a></div>
-                    <div className={styles.key}><span>Website: </span><a href={website} target="_blank" className={styles.info}>___Click_Me___</a></div>
-                    <div className={styles.key}><span>Favorite Language: </span><span className={styles.info}>{favoriteLang}</span></div>
-                    <div className={styles.key}><span>Years trapped in vim: </span><span className={styles.info}>{yrsTrappedInVim}</span></div>
+                    <div><span style={{color: color}}>Github: </span><a href={github} target="_blank" className={styles.info}>___Click_Me___</a></div>
+                    <div className={styles.key}><span style={{color: color}}>Website: </span><a href={website} target="_blank" className={styles.info}>___Click_Me___</a></div>
+                    <div className={styles.key}><span style={{color: color}}>Favorite Language: </span><span className={styles.info}>{favoriteLang}</span></div>
+                    <div className={styles.key}><span style={{color: color}}>Years trapped in vim: </span><span className={styles.info}>{yrsTrappedInVim}</span></div>
                   </div>
                 </div>
               </div>
