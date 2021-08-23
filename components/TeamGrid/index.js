@@ -16,7 +16,7 @@ const team = [
   {
     post: "Organizer",
     name: "Eddy Zhu",
-    img: "https://media-exp1.licdn.com/dms/image/C5603AQFcolJ2TmEmLQ/profile-displayphoto-shrink_200_200/0/1623547413965?e=1635379200&v=beta&t=U8spil8Usjg9ZlzgdBfWfg-7NI7zghtkqH8Iz3-2Yws",
+    img: "/EddyPFP.jpg",
     github: "https://github.com/Tronbo",
     favoriteLang: "Python",
     yrsTrappedInVim: 13,

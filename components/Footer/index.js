@@ -9,35 +9,35 @@ import { SiDiscord } from "react-icons/si";
 const Footer = () => {
   return (
     <div className={styles.animate}>
-    <div className={styles.container}>
-      <img
-        src="logo.svg"
-        alt="logo.svg"
-        style={{ width: "3rem", marginLeft: "auto", marginRight: "auto" }}
-      />
-      <p className={styles.heading}>Vivid Hacks</p>
-      <div className={styles.iconLinks}>
-        <Link href="#" passHref>
-          <SiTwitter className={styles.link} />
-        </Link>
-        <Link href="#" passHref>
-          <CgInstagram className={styles.link} />
-        </Link>
-        <Link href="#" passHref>
-          <ImLinkedin className={styles.link} />
-        </Link>
-        <a href="https://discord.gg/yDkSt4VdNj" target="_blank">
-          <SiDiscord className={styles.link} />
-        </a>
+      <div className={styles.container}>
+        <img
+          src="logo.svg"
+          alt="logo.svg"
+          style={{ width: "4rem", marginLeft: "auto", marginRight: "auto" }}
+        />
+        <p className={styles.heading}>Vivid Hacks</p>
+        <div className={styles.iconLinks}>
+          <Link href="#" passHref>
+            <SiTwitter className={styles.link} />
+          </Link>
+          <Link href="#" passHref>
+            <CgInstagram className={styles.link} />
+          </Link>
+          <Link href="#" passHref>
+            <ImLinkedin className={styles.link} />
+          </Link>
+          <a href="https://discord.gg/yDkSt4VdNj" target="_blank">
+            <SiDiscord className={styles.link} />
+          </a>
+        </div>
+        <p className={styles.para}>Hacking For Everyone</p>
+        <div className={styles.bottom}>
+          <p className={styles.copyright}>
+            2021 © Vivid Hacks. All rights reserved &nbsp; |
+          </p>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+        </div>
       </div>
-      <p className={styles.para}>Hacking For Everyone</p>
-      <div className={styles.bottom}>
-        <p className={styles.copyright}>
-          2021 © Vivid Hacks. All rights reserved &nbsp; |
-        </p>
-        <Link href="/privacy-policy">Privacy Policy</Link>
-      </div>
-    </div>
     </div>
   );
 };
