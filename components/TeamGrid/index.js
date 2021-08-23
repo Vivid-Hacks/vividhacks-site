@@ -14,10 +14,10 @@ const team = [
   {
     post: "Organizer",
     name: "Eddy Zhu",
-    img: "/rick.png",
+    img: "https://avatars.githubusercontent.com/u/67758739?s=64&v=4",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
-    yrsTrappedInVim: 69,
+    favoriteLang: "Python",
+    yrsTrappedInVim: 13,
     website: "https://eddyzhu.netlify.app/"
   },
 
