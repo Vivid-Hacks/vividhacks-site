@@ -29,7 +29,7 @@ const team = [
     name: "Ivion",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
+    favoriteLang: "urmom",a
     yrsTrappedInVim: 69,
     website: "idk",
     color: "white"
