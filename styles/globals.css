@@ -70,3 +70,6 @@ a {
     opacity: 1;
   }
 }
+.row-content-text {
+  padding-bottom: 15px !important;
+}
