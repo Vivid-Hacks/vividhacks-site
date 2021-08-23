@@ -55,24 +55,14 @@ const team = [
   },
   {
     post: "Organizer",
-    name: "Rajan",
-    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
-    github: "https://github.com/itsrajan",
-    favoriteLang: "ReactJS",
-    yrsTrappedInVim: 16,
-    website: "https://devpost.com/itsrajan",
+    name: "Joshy",
+    img: "https://cdn.discordapp.com/avatars/720865999242657792/970b391d9ce6daff5f8ec6a94930fe84.webp?size=256",
+    github: "https://github.com",
+    favoriteLang: "yuh",
+    yrsTrappedInVim: 420,
+    website: "https://devpost.com/yourmom",
     color: "white"
-  },
-    {
-    post: "Organizer",
-    name: "Rajan",
-    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
-    github: "https://github.com/itsrajan",
-    favoriteLang: "ReactJS",
-    yrsTrappedInVim: 16,
-    website: "https://devpost.com/itsrajan",
-    color: "white"
-    }
+  }
 ];
 class Tg extends React.Component {
   constructor(props) {
