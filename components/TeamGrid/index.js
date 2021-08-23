@@ -2,7 +2,7 @@ import styles from "./teamgrid.module.css";
 
 const team = [
   {
-    post: "Organiser",
+    post: "Organizer",
     name: "Vansh Gehlot",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -11,7 +11,7 @@ const team = [
     website: "idk"
   },
   {
-    post: "Organiser",
+    post: "Organizer",
     name: "Eddy Zhu",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -21,7 +21,7 @@ const team = [
   },
 
   {
-    post: "Organiser",
+    post: "Organizer",
     name: "Ivion",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -30,7 +30,7 @@ const team = [
     website: "idk"
   },
   {
-    post: "Organiser",
+    post: "Organizer",
     name: "Joshua Zou",
     img: "/rick.png",
     github: "https://github.com/Joshua-Zou",
@@ -39,7 +39,7 @@ const team = [
     website: "https://joshuaz.dev"
   },
   {
-    post: "Organiser",
+    post: "Organizer",
     name: "Me",
     img: "/rick.png",
     github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
