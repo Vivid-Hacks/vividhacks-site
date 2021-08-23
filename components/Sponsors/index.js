@@ -9,14 +9,15 @@ class Sponsor extends React.Component {
   }
   handleScroll() {
     const element = this.containerRef.current;
-    const windowOffsetTop = window.innerHeight + window.scrollY;
-
-    const elementBoxOffsetTop = element.offsetTop;
-    if (windowOffsetTop >= elementBoxOffsetTop) {
-      this.containerRef.current.classList.add("fade");
-      console.log("added!");
-    } else {
-      this.containerRef.current.classList.remove("fade")
+    if (element){
+      const windowOffsetTop = window.innerHeight + window.scrollY;
+      
+      const elementBoxOffsetTop = element.offsetTop;
+      if (windowOffsetTop >= elementBoxOffsetTop) {
+        this.containerRef.current.classList.add("fade")
+      }else{
+        this.containerRef.current.classList.remove("fade")
+      }
     }
   }
   render() {
