@@ -7,7 +7,7 @@ const team = [
     name: "Vansh Gehlot",
     img: "https://cdn.discordapp.com/attachments/870833961218236450/879443381565161533/Vansh.png.png",
     github: "https://github.com/VanshGehlot",
-    favoriteLang: "C++/HTML",
+    favoriteLang: "C++",
     yrsTrappedInVim: 19,
     website: "https://letshack.me/",
     color: "black"
