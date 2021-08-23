@@ -12,6 +12,7 @@ const team = [
     website: "https://letshack.me/",
     color: "black"
   },
+
   {
     post: "Organizer",
     name: "Eddy Zhu",

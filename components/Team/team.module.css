@@ -15,6 +15,7 @@
 }
 
 .heading {
+  text-align: center;
   font-weight: bolder;
   width: max-content;
   margin-left: auto;
@@ -25,10 +26,11 @@
 
 .pContainer {
   text-align: center;
+  margin-top: 10px;
 }
 
 .para {
-  font-size: min(2vw, 24.0167px);
+  font-size: min(3vw, 25px);
 }
 
 .animate {

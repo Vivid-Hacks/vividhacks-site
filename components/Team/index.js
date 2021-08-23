@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./team.module.css";
+import * as useOnScreen from "../Hooks/isVisible";
 
 class Team extends React.Component {
 
