@@ -23,15 +23,14 @@ const team = [
     website: "https://eddyzhu.netlify.app/",
     color: "white"
   },
-
   {
     post: "Organizer",
-    name: "Ivion",
-    img: "/rick.png",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",a
-    yrsTrappedInVim: 69,
-    website: "idk",
+    name: "Rajan",
+    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
+    github: "https://github.com/itsrajan",
+    favoriteLang: "ReactJS",
+    yrsTrappedInVim: 16,
+    website: "https://devpost.com/itsrajan",
     color: "white"
   },
   {
@@ -64,6 +63,16 @@ const team = [
     website: "https://devpost.com/itsrajan",
     color: "white"
   },
+    {
+    post: "Organizer",
+    name: "Rajan",
+    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
+    github: "https://github.com/itsrajan",
+    favoriteLang: "ReactJS",
+    yrsTrappedInVim: 16,
+    website: "https://devpost.com/itsrajan",
+    color: "white"
+    }
 ];
 class Tg extends React.Component {
   constructor(props) {
