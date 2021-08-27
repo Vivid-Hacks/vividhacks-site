@@ -43,7 +43,7 @@ const team = [
     website: "https://joshuaz.dev",
     color: "white",
   },
-  {
+  /* {
     post: "Organizer",
     name: "Manish",
     img: "https://cdn.discordapp.com/avatars/720865999242657792/970b391d9ce6daff5f8ec6a94930fe84.webp?size=256",
@@ -52,7 +52,7 @@ const team = [
     yrsTrappedInVim: 15,
     website: "me.person",
     color: "white",
-  },
+  },*/
   {
     post: "Organizer",
     name: "Rajan",
