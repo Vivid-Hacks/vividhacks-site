@@ -54,6 +54,7 @@
 
 .scrollSvgContainer {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
@@ -139,7 +140,7 @@
 }
 @media (min-width: 1000px) {
   .scrollSvgContainer {
-    display: none;
+    /* display: none; */
   }
 }
 .accent1 {
