@@ -9,7 +9,7 @@
 }
 
 .heading {
-  font-family: Castledown, serif;
+  font-family: 'Castledown', serif;
   font-weight: bold;
   text-align: center;
 
@@ -36,14 +36,14 @@
 
 .date {
   font-size: min(3vw, 48.6px);
-  font-family: Castledown, serif;
+  font-family: 'Castledown', serif;
   font-weight: heavy;
 }
 
 .text {
   /* border: 2px solid white; */
   color: #ff9900;
-  font-family: Castledown, serif;
+  font-family: 'Castledown', serif;
   font-weight: bold;
 }
 
