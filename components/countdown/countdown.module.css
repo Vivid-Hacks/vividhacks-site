@@ -6,19 +6,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0 3rem;
 }
 
 .placeholder {
   font-weight: bolder;
-  margin-top: -30px;
+  margin-top: -50px;
 }
 
 .timerText {
   font-weight: bold;
   font-size: 1.5rem;
   color: #ff027a;
-  font-size: 250%;
+  font-size: 450%;
 }
 
 .placeholder {

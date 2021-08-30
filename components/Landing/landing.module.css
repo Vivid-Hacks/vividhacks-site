@@ -9,6 +9,8 @@
 }
 
 .heading {
+  font-family: 'Castledown', serif;
+  font-weight: bold;
   text-align: center;
 
   margin-bottom: -2rem;
