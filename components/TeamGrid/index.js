@@ -25,16 +25,6 @@ const team = [
   },
   {
     post: "Organizer",
-    name: "Rajan",
-    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
-    github: "https://github.com/itsrajan",
-    favoriteLang: "ReactJS",
-    yrsTrappedInVim: 16,
-    website: "https://devpost.com/itsrajan",
-    color: "white",
-  },
-  {
-    post: "Organizer",
     name: "Joshua Zou",
     img: "/joshua.png",
     github: "https://github.com/Joshua-Zou",
