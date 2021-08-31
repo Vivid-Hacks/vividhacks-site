@@ -4,17 +4,6 @@ import styles from "./teamgrid.module.css";
 const team = [
   {
     post: "Organizer",
-    name: "Vansh Gehlot",
-    img: "https://cdn.discordapp.com/attachments/870833961218236450/879443381565161533/Vansh.png.png",
-    github: "https://github.com/VanshGehlot",
-    favoriteLang: "C++",
-    yrsTrappedInVim: 19,
-    website: "https://letshack.me/",
-    color: "black",
-  },
-
-  {
-    post: "Organizer",
     name: "Eddy Zhu",
     img: "/EddyPFP.jpg",
     github: "https://github.com/Tronbo",
@@ -33,6 +22,26 @@ const team = [
     website: "https://joshuaz.dev",
     color: "white",
   },
+  {
+    post: "Organizer",
+    name: "Vansh Gehlot",
+    img: "https://cdn.discordapp.com/attachments/870833961218236450/879443381565161533/Vansh.png.png",
+    github: "https://github.com/VanshGehlot",
+    favoriteLang: "C++",
+    yrsTrappedInVim: 19,
+    website: "https://letshack.me/",
+    color: "black",
+  },
+  {
+    post: "Organizer",
+    name: "Ivoine Strachan",
+    img: "https://cdn.discordapp.com/attachments/862501330203050004/882042643046088754/image0.jpg",
+    github: "https://github.com/sikethedev",
+    favoriteLang: "Javascript",
+    yrsTrappedInVim: 16,
+    website: "https://ivoinetechs.netlify.app",
+    color: "white",
+  },
   /* {
     post: "Organizer",
     name: "Manish",
@@ -43,16 +52,6 @@ const team = [
     website: "me.person",
     color: "white",
   },*/
-  {
-    post: "Organizer",
-    name: "Rajan",
-    img: "https://avatars.githubusercontent.com/u/64426829?v=4",
-    github: "https://github.com/itsrajan",
-    favoriteLang: "ReactJS",
-    yrsTrappedInVim: 16,
-    website: "https://devpost.com/itsrajan",
-    color: "white",
-  },
 ];
 class Tg extends React.Component {
   constructor(props) {
