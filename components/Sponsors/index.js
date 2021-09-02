@@ -39,7 +39,7 @@ class Sponsor extends React.Component {
             </div>
           </div>
           <p className={styles.para}>Want to be our partner?</p>
-          <button className={styles.button}>LEARN MORE</button>
+          <button className={styles.button}><a href="mailto:vividhacks@gmail.com">LEARN MORE</a></button>
         </div>
       </div>
     );

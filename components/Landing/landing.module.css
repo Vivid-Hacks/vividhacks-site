@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("https://firefly.com/wp-content/themes/firefly_aerospace/images/404/bg-404-stars.svg");
 }
 
 .heading {
