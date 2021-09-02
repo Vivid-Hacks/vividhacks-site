@@ -9,25 +9,6 @@ import React from "react";
 
 class Footer extends React.Component {
   render() {
-    if (typeof window === "object") {
-      document.addEventListener("scroll", async function () {
-        if (window.scrolledToBottom === true) return;
-        function sleep(ms){
-          return new Promise(resolve => setTimeout(resolve, ms))
-        }
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-          window.scrolledToBottom = true;
-          document.getElementById("footerFirst").style.transition = "1s all";
-          document.getElementById("footerFirst").style.opacity = "0";
-          await sleep(1000);
-          document.getElementById("footerFirst").style.display = "none";
-          document.getElementById("footerSecond").style.transition = "1s all";
-          document.getElementById("footerSecond").style.display = "inline-flex";
-          document.getElementById("footerSecond").style.opacity = "1";
-
-        }
-      })
-    }
     return (
       <div className={styles.animate}>
         <div className={styles.container}>
@@ -53,10 +34,7 @@ class Footer extends React.Component {
               </a>
             </div>
             <p className={styles.para}>Hacking For Everyone</p>
-            <div id="footerFirst">
-              Looks like you've reached the bottom of the page!<br></br> Here's some dumb legal jargon that no one understands
-            </div>
-            <div className={styles.bottom} id="footerSecond" style={{display: "none"}}>
+            <div className={styles.bottom} id="footerSecond">
               <p className={styles.copyright}>
                 2021 © Vivid Hacks. All rights reserved &nbsp; |
               </p>
