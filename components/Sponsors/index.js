@@ -34,7 +34,7 @@ class Sponsor extends React.Component {
               <div><span>Echo AR</span></div>
             </div>
             <div className={styles.sponsor}>
-              <a href="https://hackclub.org" target="_blank"><img src="/hackclub.png" width="215"></img></a>
+              <a href="https://hackclub.org" target="_blank"><img src="/hackclublogo.svg" width="318"></img></a>
               <div><span>Hack Club</span></div>
             </div>
           </div>

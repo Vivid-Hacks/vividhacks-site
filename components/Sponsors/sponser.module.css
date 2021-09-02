@@ -53,17 +53,19 @@
     opacity: 1;
   }
 }
-
 .sponsorGrid {
-  display: flex;
+  margin-top: 25px;
 }
 .sponsor {
-  margin: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: fit-content;
 }
 .sponsor img {
   border-radius: 10px;
 }
-.sponsor div {
+.sponsor > div {
   font-size: 1.2em;
   display: block;
   text-align: center;
