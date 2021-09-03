@@ -29,10 +29,10 @@ class Sponsor extends React.Component {
         <div className={styles.container}>
           <h2 className={styles.heading}>Sponsors</h2>
           <div className={styles.sponsorGrid}>
-            <div className={styles.sponsor}>
+            {/* <div className={styles.sponsor}>
               <a href="https://www.echoar.xyz/" target="_blank"><img src="/echoarlogo.png"></img></a>
               <div><span>Echo AR</span></div>
-            </div>
+            </div> */}
             <div className={styles.sponsor}>
               <a href="https://hackclub.org" target="_blank"><img src="/hackclublogo.svg" width="318"></img></a>
               <div><span>Hack Club</span></div>
