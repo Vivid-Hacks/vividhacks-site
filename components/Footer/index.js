@@ -21,17 +21,34 @@ class Footer extends React.Component {
             <p className={styles.heading}>Vivid Hacks</p>
             <div className={styles.iconLinks}>
               <Link href="#" passHref>
-                <SiTwitter className={styles.link} />
+                <SiTwitter
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                />
+              </Link>
+              <Link
+                href="https://www.instagram.com/vivid_hacks/"
+                target="_blank"
+                passHref
+              >
+                <CgInstagram
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                  target="_blank"
+                />
               </Link>
               <Link href="#" passHref>
-                <CgInstagram className={styles.link} />
+                <ImLinkedin
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                />
               </Link>
-              <Link href="#" passHref>
-                <ImLinkedin className={styles.link} />
+              <Link href="https://discord.gg/yDkSt4VdNj" target="_blank">
+                <SiDiscord
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                />
               </Link>
-              <a href="https://discord.gg/yDkSt4VdNj" target="_blank">
-                <SiDiscord className={styles.link} />
-              </a>
             </div>
             <p className={styles.para}>Hacking For Everyone</p>
             <div className={styles.bottom} id="footerSecond">
@@ -42,12 +59,11 @@ class Footer extends React.Component {
               &nbsp;&nbsp;|&nbsp;&nbsp;
               <Link href="/tos">ToS</Link>
             </div>
-
           </div>
         </div>
       </div>
     );
   }
-};
+}
 
 export default Footer;
