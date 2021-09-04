@@ -9,25 +9,6 @@ import React from "react";
 
 class Footer extends React.Component {
   render() {
-    if (typeof window === "object") {
-      document.addEventListener("scroll", async function () {
-        if (window.scrolledToBottom === true) return;
-        function sleep(ms){
-          return new Promise(resolve => setTimeout(resolve, ms))
-        }
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-          window.scrolledToBottom = true;
-          document.getElementById("footerFirst").style.transition = "1s all";
-          document.getElementById("footerFirst").style.opacity = "0";
-          await sleep(1000);
-          document.getElementById("footerFirst").style.display = "none";
-          document.getElementById("footerSecond").style.transition = "1s all";
-          document.getElementById("footerSecond").style.display = "inline-flex";
-          document.getElementById("footerSecond").style.opacity = "1";
-
-        }
-      })
-    }
     return (
       <div className={styles.animate}>
         <div className={styles.container}>
@@ -40,23 +21,37 @@ class Footer extends React.Component {
             <p className={styles.heading}>Vivid Hacks</p>
             <div className={styles.iconLinks}>
               <Link href="#" passHref>
-                <SiTwitter className={styles.link} />
+                <SiTwitter
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                />
+              </Link>
+              <Link
+                href="https://www.instagram.com/vivid_hacks/"
+                target="_blank"
+                passHref
+              >
+                <CgInstagram
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                  target="_blank"
+                />
               </Link>
               <Link href="#" passHref>
-                <CgInstagram className={styles.link} />
+                <ImLinkedin
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                />
               </Link>
-              <Link href="#" passHref>
-                <ImLinkedin className={styles.link} />
+              <Link href="https://discord.gg/yDkSt4VdNj" target="_blank">
+                <SiDiscord
+                  className={styles.link}
+                  style={{ cursor: "pointer" }}
+                />
               </Link>
-              <a href="https://discord.gg/yDkSt4VdNj" target="_blank">
-                <SiDiscord className={styles.link} />
-              </a>
             </div>
             <p className={styles.para}>Hacking For Everyone</p>
-            <div id="footerFirst">
-              Looks like you've reached the bottom of the page!<br></br> Here's some dumb legal jargon that no one understands
-            </div>
-            <div className={styles.bottom} id="footerSecond" style={{display: "none"}}>
+            <div className={styles.bottom} id="footerSecond">
               <p className={styles.copyright}>
                 2021 © Vivid Hacks. All rights reserved &nbsp; |
               </p>
@@ -64,12 +59,11 @@ class Footer extends React.Component {
               &nbsp;&nbsp;|&nbsp;&nbsp;
               <Link href="/tos">ToS</Link>
             </div>
-
           </div>
         </div>
       </div>
     );
   }
-};
+}
 
 export default Footer;
