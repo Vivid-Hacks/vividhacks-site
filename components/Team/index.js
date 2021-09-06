@@ -3,30 +3,30 @@ import styles from "./team.module.css";
 import * as useOnScreen from "../Hooks/isVisible";
 
 class Team extends React.Component {
-
   constructor(props) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.containerRef = React.createRef();
   }
   handleScroll() {
-
     const element = this.containerRef.current;
-    if (element){
+    if (element) {
       const windowOffsetTop = window.innerHeight + window.scrollY;
-      
+
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
-        this.containerRef.current.classList.add("fade")
-      }else{
-        this.containerRef.current.classList.remove("fade")
+        this.containerRef.current.classList.add("fade");
+      } else {
+        this.containerRef.current.classList.remove("fade");
       }
     }
   }
+
   render() {
-    if (typeof window === 'object') {
+    if (typeof window === "object") {
       document.addEventListener("scroll", this.handleScroll, true);
     }
+
     return (
       <div ref={this.containerRef}>
         <div id="team" className={styles.container}>
@@ -46,6 +46,6 @@ class Team extends React.Component {
       </div>
     );
   }
-};
+}
 
 export default Team;

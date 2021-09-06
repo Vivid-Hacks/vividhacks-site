@@ -42,17 +42,18 @@ const team = [
     website: "https://ivoinetechs.netlify.app",
     color: "white",
   },
-  /* {
+  {
     post: "Organizer",
     name: "Manish",
-    img: "https://cdn.discordapp.com/avatars/720865999242657792/970b391d9ce6daff5f8ec6a94930fe84.webp?size=256",
-    github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    favoriteLang: "urmom",
-    yrsTrappedInVim: 15,
-    website: "me.person",
+    img: "/mePFP.jpg",
+    github: "https://github.com/Manish674",
+    favoriteLang: "Javascript",
+    yrsTrappedInVim: "16",
+    website: "",
     color: "white",
-  },*/
+  },
 ];
+
 class Tg extends React.Component {
   constructor(props) {
     super(props);
