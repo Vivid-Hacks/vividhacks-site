@@ -43,6 +43,16 @@ const team = [
     color: "white",
   },
   {
+    post: "Sponsorships",
+    name: "Courtney Stringer",
+    img: "/courtney.jpg",
+    github: "https://github.com/sikethedev",
+    favoriteLang: "Javascript",
+    yrsTrappedInVim: 17,
+    website: "https://courtneys-personal-website.courtneystringe.repl.co",
+    color: "white",
+  },
+  {
     post: "Organizer",
     name: "Manish",
     img: "/mePFP.jpg",
