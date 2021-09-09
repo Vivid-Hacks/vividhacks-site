@@ -36,10 +36,7 @@
   border: none !important;
 }
 
-.offset:hover {
-  color: white;
-  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
-}
+
 .buttonSpan {
   position: inherit;
   top: 3px;
@@ -62,6 +59,10 @@
   position: fixed;
 }
 @media (max-width: 500px) {
+  .offset:hover {
+    color: white;
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
   .buttonSpan {
     font-size: 1.2em;
   }
