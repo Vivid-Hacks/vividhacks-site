@@ -3,6 +3,7 @@ import styles from "./teamgrid.module.css";
 
 const team = [
   {
+    index: 0,
     post: "Organizer",
     name: "Eddy Zhu",
     img: "/EddyPFP.jpg",
@@ -13,6 +14,7 @@ const team = [
     color: "white",
   },
   {
+    index: 1,
     post: "Organizer",
     name: "Joshua Zou",
     img: "/joshua.png",
@@ -23,9 +25,10 @@ const team = [
     color: "white",
   },
   {
+    index: 2,
     post: "Organizer",
     name: "Vansh Gehlot",
-    img: "https://cdn.discordapp.com/attachments/870833961218236450/879443381565161533/Vansh.png.png",
+    img: "/Vansh.png",
     github: "https://github.com/VanshGehlot",
     favoriteLang: "C++",
     yrsTrappedInVim: 19,
@@ -33,9 +36,10 @@ const team = [
     color: "black",
   },
   {
+    index: 3,
     post: "Organizer",
     name: "Ivoine Strachan",
-    img: "https://cdn.discordapp.com/attachments/862501330203050004/882042643046088754/image0.jpg",
+    img: "/ivione.png",
     github: "https://github.com/sikethedev",
     favoriteLang: "Javascript",
     yrsTrappedInVim: 16,
@@ -43,6 +47,7 @@ const team = [
     color: "white",
   },
   {
+    index: 4,
     post: "Sponsorships",
     name: "Courtney Stringer",
     img: "/courtney.jpg",
@@ -53,6 +58,7 @@ const team = [
     color: "white",
   },
   {
+    index: 5,
     post: "Organizer",
     name: "Manish",
     img: "/mePFP.jpg",
@@ -78,6 +84,16 @@ class Tg extends React.Component {
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
         this.containerRef.current.classList.add("fade");
+
+        let allFront = document.querySelectorAll("[data-frontGridIndex]");
+        allFront.forEach(element => {
+          element.src=team[Number(element.getAttribute('data-frontGridIndex'))].img
+        })
+
+        let allBack = document.querySelectorAll("[data-backGridIndex]");
+        allBack.forEach(element => {
+          element.src=team[Number(element.getAttribute('data-backGridIndex'))].img
+        })
       } else {
         this.containerRef.current.classList.remove("fade");
       }
@@ -101,6 +117,7 @@ class Tg extends React.Component {
                 yrsTrappedInVim,
                 website,
                 color,
+                index
               },
               i
             ) => {
@@ -114,13 +131,13 @@ class Tg extends React.Component {
                       <div className={styles.header} style={{ color: color }}>
                         {post}
                       </div>
-                      <img className={styles.img} src={img} alt="img" />
+                        <img className={styles.img} data-srrc={img} alt="img" data-frontGridIndex={index}/>
                       <div className={styles.name} style={{ color: color }}>
                         {name}
                       </div>
                     </div>
                     <div className={styles.back}>
-                      <img className={styles.img} src={img} alt="img" />
+                      <img className={styles.img} data-srrc={img} alt="img" data-backGridIndex={index}/>
                       <div className={styles.backStats}>
                         <div>
                           <span style={{ color: color }}>Github: </span>
