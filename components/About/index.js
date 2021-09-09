@@ -14,6 +14,7 @@ class About extends React.Component {
     this.growingLine = { width: 0 };
     this.lastScrollTop = 0;
     this.containerRef = React.createRef();
+    this.youtubeIframe = React.createRef();
   }
   handleScroll() {
 
@@ -24,6 +25,7 @@ class About extends React.Component {
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
         this.containerRef.current.classList.add("fade")
+        this.youtubeIframe.current.src="https://www.youtube.com/embed/KUIigF_7P5c" 
       }else{
         this.containerRef.current.classList.remove("fade")
       }
@@ -76,7 +78,7 @@ class About extends React.Component {
                   <Timeline />
                 </div>
               </div>
-              <iframe src="https://www.youtube.com/embed/KUIigF_7P5c" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe ref={this.youtubeIframe} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
         </div>
