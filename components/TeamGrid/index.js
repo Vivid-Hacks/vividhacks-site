@@ -75,6 +75,7 @@ class Tg extends React.Component {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.containerRef = React.createRef();
+    this.addedImg = false;
   }
   handleScroll() {
     const element = this.containerRef.current;
@@ -85,15 +86,19 @@ class Tg extends React.Component {
       if (windowOffsetTop >= elementBoxOffsetTop) {
         this.containerRef.current.classList.add("fade");
 
-        let allFront = document.querySelectorAll("[data-frontGridIndex]");
-        allFront.forEach(element => {
-          element.src=team[Number(element.getAttribute('data-frontGridIndex'))].img
-        })
+        if (this.addedImg === false) {
 
-        let allBack = document.querySelectorAll("[data-backGridIndex]");
-        allBack.forEach(element => {
-          element.src=team[Number(element.getAttribute('data-backGridIndex'))].img
-        })
+          let allFront = document.querySelectorAll("[data-frontGridIndex]");
+          allFront.forEach(element => {
+            element.src = team[Number(element.getAttribute('data-frontGridIndex'))].img
+          })
+
+          let allBack = document.querySelectorAll("[data-backGridIndex]");
+          allBack.forEach(element => {
+            element.src = team[Number(element.getAttribute('data-backGridIndex'))].img
+          })
+          this.addedImg = true;
+        }
       } else {
         this.containerRef.current.classList.remove("fade");
       }
@@ -101,7 +106,7 @@ class Tg extends React.Component {
   }
   render() {
     if (typeof window === "object") {
-      document.addEventListener("scroll", this.handleScroll, true);
+      document.addEventListener("scroll", this.handleScroll, { passive: true });
     }
     return (
       <div ref={this.containerRef}>
@@ -131,13 +136,13 @@ class Tg extends React.Component {
                       <div className={styles.header} style={{ color: color }}>
                         {post}
                       </div>
-                        <img className={styles.img} data-srrc={img} alt="img" data-frontGridIndex={index}/>
+                      <img className={styles.img} data-srrc={img} alt="img" data-frontGridIndex={index} />
                       <div className={styles.name} style={{ color: color }}>
                         {name}
                       </div>
                     </div>
                     <div className={styles.back}>
-                      <img className={styles.img} data-srrc={img} alt="img" data-backGridIndex={index}/>
+                      <img className={styles.img} data-srrc={img} alt="img" data-backGridIndex={index} />
                       <div className={styles.backStats}>
                         <div>
                           <span style={{ color: color }}>Github: </span>

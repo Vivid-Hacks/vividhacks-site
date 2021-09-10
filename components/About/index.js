@@ -13,6 +13,7 @@ class About extends React.Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.growingLine = { width: 0 };
     this.lastScrollTop = 0;
+    this.addedYTiframe = false;
     this.containerRef = React.createRef();
     this.youtubeIframe = React.createRef();
   }
@@ -25,7 +26,10 @@ class About extends React.Component {
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
         this.containerRef.current.classList.add("fade")
-        this.youtubeIframe.current.src="https://www.youtube.com/embed/KUIigF_7P5c" 
+        if (this.addedYTiframe === false){
+          this.youtubeIframe.current.src="https://www.youtube.com/embed/KUIigF_7P5c";
+          this.addedYTiframe = true;
+        }
       }else{
         this.containerRef.current.classList.remove("fade")
       }
@@ -56,7 +60,7 @@ class About extends React.Component {
   }
   render() {
     if (typeof window === 'object') {
-      document.addEventListener("scroll", this.handleScroll, true);
+      document.addEventListener("scroll", this.handleScroll, {passive: true});
     }
     return (
       <div ref={this.containerRef}>
