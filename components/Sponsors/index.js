@@ -77,7 +77,7 @@ class Sponsor extends React.Component {
             </div>
             <div className={styles.sponsor}>
               <a href="https://www.stickermule.com" target="_blank">
-                <img src="/sticker-mule-logo.png" width="318"></img>
+                <img src="/sticker-mule-logo.svg" width="250"></img>
               </a>
               <div>
                 <span>Sticker Mule</span>
