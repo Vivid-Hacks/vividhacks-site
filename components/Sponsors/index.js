@@ -21,7 +21,7 @@ class Sponsor extends React.Component {
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
         this.containerRef.current.classList.add("fade");
-        this.hackclubIframe.current.src = "";
+        this.hackclubIframe.current.src = ""; 
       } else {
         this.containerRef.current.classList.remove("fade");
       }
