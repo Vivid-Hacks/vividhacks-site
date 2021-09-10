@@ -24,11 +24,11 @@
 }
 
 .button {
-  background: linear-gradient(95.16deg, #ff027a 0%, #ff3695 100%);
-  padding: 0.7rem;
+  background: linear-gradient(95.16deg, #02c4ff 0%, #36e8ff 100%);
+  padding: 1.2rem;
   border: none;
   border-radius: 8px;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   margin-bottom: 6rem;
