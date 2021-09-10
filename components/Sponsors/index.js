@@ -8,6 +8,7 @@ class Sponsor extends React.Component {
     this.modalRef = React.createRef();
     this.modalBtn = React.createRef();
     this.coverBG = React.createRef();
+    this.hackclubIframe = React.createRef();
 
     this.handleScroll = this.handleScroll.bind(this);
     this.openModal = this.openModal.bind(this);
@@ -19,20 +20,22 @@ class Sponsor extends React.Component {
 
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
-        this.containerRef.current.classList.add("fade")
+        this.containerRef.current.classList.add("fade");
+        this.hackclubIframe.current.src = ""
       } else {
         this.containerRef.current.classList.remove("fade")
       }
     }
   }
   openModal(){
+    this.hackclubIframe.current.src = "https://bank.hackclub.com/donations/start/vivid-hacks"
     this.modalRef.current.style.display = "block";
     this.coverBG.current.style.display = "block";
   }
   render() {
     var classThis = this;
     if (typeof window === 'object') {
-      document.addEventListener("scroll", this.handleScroll, true);
+      document.addEventListener("scroll", this.handleScroll, {passive: true});
       document.addEventListener("click", function(event){
         if (classThis.modalRef.current.contains(event.target)){
         }else{
@@ -45,7 +48,7 @@ class Sponsor extends React.Component {
     return (
       <div ref={this.containerRef}>
         <div className={styles.modal} ref={this.modalRef} style={{display: "none"}}>
-          <iframe src="https://bank.hackclub.com/donations/start/vivid-hacks"></iframe>
+          <iframe ref={this.hackclubIframe}></iframe>
         </div>
         <div className={styles.cover} ref={this.coverBG} style={{display: "none"}}></div>
         <div className={styles.container}>
