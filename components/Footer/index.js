@@ -1,5 +1,4 @@
 import Link from "next/link";
-import logo from "../../public/logo.svg";
 import styles from "./footer.module.css";
 import { SiTwitter } from "react-icons/si";
 import { CgInstagram } from "react-icons/cg";

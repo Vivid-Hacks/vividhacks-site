@@ -2,12 +2,10 @@
 import { Link } from "react-scroll";
 import CrossLink from 'next/link'
 
-import Image from "next/image";
 import * as fa from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 import * as React from "react"
-import Svg from "../../public/logo.svg";
 import styles from "./navbar.module.css";
 
 var lineLeft = styles.lineLeft;
