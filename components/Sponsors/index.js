@@ -21,7 +21,7 @@ class Sponsor extends React.Component {
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
         this.containerRef.current.classList.add("fade");
-        this.hackclubIframe.current.src = ""; 
+        this.hackclubIframe.current.src = "";
       } else {
         this.containerRef.current.classList.remove("fade");
       }
@@ -86,7 +86,9 @@ class Sponsor extends React.Component {
           </div>
           <p className={styles.para}>Want to be our partner?</p>
           <button className={styles.button} style={{ marginBottom: 0 }}>
-            <a href="mailto:vividhacks@gmail.com">LEARN MORE</a>
+            <a href="https://vivd.tk/prospectus" target="_blank">
+              LEARN MORE
+            </a>
           </button>
           <p className={styles.para}>Or </p>
           <button className={styles.button} ref={this.modalBtn}>
