@@ -1,11 +1,10 @@
-
 import { Link } from "react-scroll";
-import CrossLink from 'next/link'
+import CrossLink from "next/link";
 
-import * as fa from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as fa from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import * as React from "react"
+import * as React from "react";
 import styles from "./navbar.module.css";
 
 var lineLeft = styles.lineLeft;
@@ -25,7 +24,7 @@ class Navbar extends React.Component {
 
   toggleMobileNavbar(close) {
     if (this.menuStyling.transform !== undefined) {
-      this.menuStyling = {}
+      this.menuStyling = {};
       lineLeft = styles.lineLeft;
       lineRight = styles.lineRight;
       lineMiddle = styles.lineMiddle;
@@ -34,11 +33,11 @@ class Navbar extends React.Component {
       lineRight = styles.lineRightClose;
       lineMiddle = styles.lineMiddleClose;
       this.menuStyling = {
-        transform: "translateX(200px)"
-      }
+        transform: "translateX(200px)",
+      };
     }
     this.forceUpdate();
-    this.addEvLisner()
+    this.addEvLisner();
   }
 
   addEvLisner() {
@@ -51,20 +50,35 @@ class Navbar extends React.Component {
       lineLeft = styles.lineLeft;
       lineRight = styles.lineRight;
       lineMiddle = styles.lineMiddle;
-      elm.forceUpdate()
-    })
+      elm.forceUpdate();
+    });
   }
 
   render() {
-    if (typeof window === 'object') {
+    if (typeof window === "object") {
       if (window.location.pathname === "/") {
         return (
-        <div className={`${styles.animate}`}>
+          <div className={`${styles.animate}`}>
             <div className={styles.container}>
               <div className={styles.logo}>
-                <CrossLink href="/"><a><h3 className={styles.logoText}>Vivid Hacks</h3></a></CrossLink>
-                <CrossLink href="/"><a><img src="logo.svg" alt="logo.svg" style={{ width: "5rem" }} /></a></CrossLink>
-                <a onClick={this.toggleMobileNavbar} className={styles.menuIcon} >
+                <CrossLink href="/">
+                  <a>
+                    <h3 className={styles.logoText}>Vivid Hacks</h3>
+                  </a>
+                </CrossLink>
+                <CrossLink href="/">
+                  <a>
+                    <img
+                      src="logo.svg"
+                      alt="logo.svg"
+                      style={{ width: "5rem" }}
+                    />
+                  </a>
+                </CrossLink>
+                <a
+                  onClick={this.toggleMobileNavbar}
+                  className={styles.menuIcon}
+                >
                   <hr className={lineLeft}></hr>
                   <hr className={lineMiddle}></hr>
                   <hr className={lineRight}></hr>
@@ -72,22 +86,63 @@ class Navbar extends React.Component {
               </div>
               <ul className={this.menu} style={this.menuStyling}>
                 <li className={styles.link}>
-                  <a href="https://vividhacks.devpost.com/" className={styles.alink} target="_blank"> DEVPOST</a>
+                  <a
+                    href="https://vividhacks.devpost.com/"
+                    className={styles.alink}
+                    target="_blank"
+                  >
+                    {" "}
+                    DEVPOST
+                  </a>
                 </li>
                 <li className={styles.link}>
-                  <Link href="/" smooth="true" duration="500"> TEAM</Link>
+                  <Link href="/" smooth="true" duration="500">
+                    {" "}
+                    TEAM
+                  </Link>
                 </li>
                 <li className={styles.link}>
-                  <Link to="timeline" smooth="true" duration="500" className={styles.alink}> TIMELINE</Link>
+                  <Link
+                    to="timeline"
+                    smooth="true"
+                    duration="500"
+                    className={styles.alink}
+                  >
+                    {" "}
+                    TIMELINE
+                  </Link>
                 </li>
                 <li className={styles.link}>
-                  <Link to="about" smooth="true" duration="500" className={styles.alink}> ABOUT</Link>
+                  <Link
+                    to="about"
+                    smooth="true"
+                    duration="500"
+                    className={styles.alink}
+                  >
+                    {" "}
+                    ABOUT
+                  </Link>
                 </li>
                 <li className={styles.link}>
-                  <Link to="faqs" smooth="true" duration="500" className={styles.alink}> FAQs</Link>
+                  <Link
+                    to="faqs"
+                    smooth="true"
+                    duration="500"
+                    className={styles.alink}
+                  >
+                    {" "}
+                    FAQs
+                  </Link>
                 </li>
                 <li className={styles.link}>
-                  <a href="https://vividhacks.devpost.com/" target="_blank" className={styles.alink}> REGISTER</a>
+                  <a
+                    href="https://vividhacks.devpost.com/"
+                    target="_blank"
+                    className={styles.alink}
+                  >
+                    {" "}
+                    REGISTER
+                  </a>
                 </li>
               </ul>
             </div>
@@ -98,9 +153,24 @@ class Navbar extends React.Component {
           <div>
             <div className={styles.container}>
               <div className={styles.logo}>
-                <CrossLink href="/"><a><h3 className={styles.logoText}>Vivid Hacks</h3></a></CrossLink>
-                <CrossLink href="/"><a><img src="logo.svg" alt="logo.svg" style={{ width: "5rem" }} /></a></CrossLink>
-                <a onClick={this.toggleMobileNavbar} className={styles.menuIcon} >
+                <CrossLink href="/">
+                  <a>
+                    <h3 className={styles.logoText}>Vivid Hacks</h3>
+                  </a>
+                </CrossLink>
+                <CrossLink href="/">
+                  <a>
+                    <img
+                      src="logo.svg"
+                      alt="logo.svg"
+                      style={{ width: "5rem" }}
+                    />
+                  </a>
+                </CrossLink>
+                <a
+                  onClick={this.toggleMobileNavbar}
+                  className={styles.menuIcon}
+                >
                   <hr className={lineLeft}></hr>
                   <hr className={lineMiddle}></hr>
                   <hr className={lineRight}></hr>
@@ -108,22 +178,43 @@ class Navbar extends React.Component {
               </div>
               <ul className={this.menu} style={this.menuStyling}>
                 <li className={styles.link}>
-                  <a href="https://vividhacks.devpost.com/" className={styles.alink} target="_blank"> DEVPOST</a>
+                  <a
+                    href="https://discord.gg/HGXwx5A8dU"
+                    className={styles.alink}
+                    target="_blank"
+                  >
+                    Discord
+                  </a>
                 </li>
                 <li className={styles.link}>
-                  <CrossLink href="/#team"><a> TEAM</a></CrossLink>
+                  <CrossLink href="/#team">
+                    <a> TEAM</a>
+                  </CrossLink>
                 </li>
                 <li className={styles.link}>
-                  <CrossLink href="/#timeline"><a className={styles.alink}> TIMELINE</a></CrossLink>
+                  <CrossLink href="/#timeline">
+                    <a className={styles.alink}> TIMELINE</a>
+                  </CrossLink>
                 </li>
                 <li className={styles.link}>
-                  <CrossLink href="/#about"><a className={styles.alink}> ABOUT</a></CrossLink>
+                  <CrossLink href="/#about">
+                    <a className={styles.alink}> ABOUT</a>
+                  </CrossLink>
                 </li>
                 <li className={styles.link}>
-                  <CrossLink href="/#faqs"><a className={styles.alink}> FAQs</a></CrossLink>
+                  <CrossLink href="/#faqs">
+                    <a className={styles.alink}> FAQs</a>
+                  </CrossLink>
                 </li>
                 <li className={styles.link}>
-                  <a href="https://vividhacks.devpost.com/" target="_blank" className={styles.alink}> REGISTER</a>
+                  <a
+                    href="https://vividhacks.devpost.com/"
+                    target="_blank"
+                    className={styles.alink}
+                  >
+                    {" "}
+                    REGISTER
+                  </a>
                 </li>
               </ul>
             </div>
@@ -131,10 +222,8 @@ class Navbar extends React.Component {
         );
       }
     }
-    return (
-      <div></div>
-    );
+    return <div></div>;
   }
-};
+}
 
 export default Navbar;
