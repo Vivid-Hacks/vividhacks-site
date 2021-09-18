@@ -2,6 +2,7 @@
   "name": "vividhackswebsite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vivid-hacks.github.io/vividhacks-site",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
