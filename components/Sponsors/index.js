@@ -75,12 +75,22 @@ class Sponsor extends React.Component {
                 <span>Hack Club</span>
               </div>
             </div>
+
             <div className={styles.sponsor}>
               <a href="https://www.stickermule.com" target="_blank">
                 <img src="/sticker-mule-logo.svg" width="250"></img>
               </a>
               <div>
                 <span>Sticker Mule</span>
+              </div>
+            </div>
+
+            <div className={styles.sponsor}>
+              <a href="https://www.leadlearners.ca" target="_blank">
+                <img src="/leadinglearners.png" width="170"></img>
+              </a>
+              <div>
+                <span>Leading Learners</span>
               </div>
             </div>
           </div>
