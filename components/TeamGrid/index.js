@@ -47,7 +47,7 @@ const team = [
     color: "white",
   },
   {
-    index: 5,
+    index: 4,
     post: "Organizer",
     name: "Manish",
     img: "/mePFP.jpg",
@@ -76,17 +76,6 @@ class Tg extends React.Component {
         this.containerRef.current.classList.add("fade");
 
         if (this.addedImg === false) {
-          let allFront = document.querySelectorAll("[data-frontGridIndex]");
-          allFront.forEach((element) => {
-            element.src =
-              team[Number(element.getAttribute("data-frontGridIndex"))].img;
-          });
-
-          let allBack = document.querySelectorAll("[data-backGridIndex]");
-          allBack.forEach((element) => {
-            element.src =
-              team[Number(element.getAttribute("data-backGridIndex"))].img;
-          });
           this.addedImg = true;
         }
       } else {
@@ -128,7 +117,7 @@ class Tg extends React.Component {
                       </div>
                       <img
                         className={styles.img}
-                        data-srrc={img}
+                        src={img}
                         alt="img"
                         data-frontGridIndex={index}
                       />
@@ -139,7 +128,7 @@ class Tg extends React.Component {
                     <div className={styles.back}>
                       <img
                         className={styles.img}
-                        data-srrc={img}
+                        src={img}
                         alt="img"
                         data-backGridIndex={index}
                       />
