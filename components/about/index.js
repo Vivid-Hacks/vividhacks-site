@@ -18,36 +18,46 @@ class About extends React.Component {
     this.youtubeIframe = React.createRef();
   }
   handleScroll() {
-
     const element = this.containerRef.current;
-    if (element){
+    if (element) {
       const windowOffsetTop = window.innerHeight + window.scrollY;
-      
+
       const elementBoxOffsetTop = element.offsetTop;
       if (windowOffsetTop >= elementBoxOffsetTop) {
-        this.containerRef.current.classList.add("fade")
-        if (this.addedYTiframe === false){
-          this.youtubeIframe.current.src="https://www.youtube.com/embed/KUIigF_7P5c";
+        this.containerRef.current.classList.add("fade");
+        if (this.addedYTiframe === false) {
+          this.youtubeIframe.current.src =
+            "https://www.youtube.com/embed/KUIigF_7P5c";
           this.addedYTiframe = true;
         }
-      }else{
-        this.containerRef.current.classList.remove("fade")
+      } else {
+        this.containerRef.current.classList.remove("fade");
       }
     }
     var st = window.scrollY;
     if (st > this.lastScrollTop) {
-      let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length - 2)) + 0.4;
+      let newWidth =
+        Number(
+          this.growingLine.width
+            .toString()
+            .slice(0, this.growingLine.width.toString().length - 2)
+        ) + 0.4;
       this.growingLine = {
-        width: newWidth + "vw"
-      }
+        width: newWidth + "vw",
+      };
       this.forceUpdate();
     } else {
-      let newWidth = Number(this.growingLine.width.toString().slice(0, this.growingLine.width.toString().length - 2)) - 0.4;
-      if (newWidth < 0) newWidth = 0
+      let newWidth =
+        Number(
+          this.growingLine.width
+            .toString()
+            .slice(0, this.growingLine.width.toString().length - 2)
+        ) - 0.4;
+      if (newWidth < 0) newWidth = 0;
       this.growingLine = {
-        width: newWidth + "vw"
-      }
-      this.forceUpdate()
+        width: newWidth + "vw",
+      };
+      this.forceUpdate();
     }
     this.lastScrollTop = st;
   }
@@ -59,8 +69,8 @@ class About extends React.Component {
     let elm = this;
   }
   render() {
-    if (typeof window === 'object') {
-      document.addEventListener("scroll", this.handleScroll, {passive: true});
+    if (typeof window === "object") {
+      document.addEventListener("scroll", this.handleScroll, { passive: true });
     }
     return (
       <div ref={this.containerRef}>
@@ -72,24 +82,31 @@ class About extends React.Component {
             <span className={styles.bigtext}>What is VividHacks?</span>
             <div className={styles.mainContent}>
               <div className={styles.desc}>
-                Vivid Hacks is a 60 hour hackathon for everybody.
-                We'll provide you with the mentors to bring your dream project to <span style={{ color: "#68EB3B" }}>reality</span>.
-                Build something <span style={{ color: "#EDC229" }}>crazy</span>.
-                Something <span style={{ color: "#E36C6C" }}>game-changing</span>.
-                Something <span style={{ color: "#2DC2CC" }}>cutting edge</span>.
-                Vivid Hacks is a weekend experience you won't want to miss. 😛
+                Vivid Hacks is a 65 hour hackathon for everybody. We'll provide
+                you with the mentors to bring your dream project to{" "}
+                <span style={{ color: "#68EB3B" }}>reality</span>. Build
+                something <span style={{ color: "#EDC229" }}>crazy</span>.
+                Something{" "}
+                <span style={{ color: "#E36C6C" }}>game-changing</span>.
+                Something <span style={{ color: "#2DC2CC" }}>cutting edge</span>
+                . Vivid Hacks is a weekend experience you won't want to miss. 😛
                 <div className={styles.faqwrapper}>
                   <Timeline />
                 </div>
               </div>
-              <iframe ref={this.youtubeIframe} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe
+                ref={this.youtubeIframe}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     );
   }
-};
+}
 
 //About.prototype.reRender()
 
