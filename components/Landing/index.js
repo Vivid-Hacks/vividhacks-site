@@ -39,7 +39,7 @@ const Landing = () => {
         <Register />
         <h3 className={styles.date}>October 15, 2021, 5PM EST</h3>
         <p>
-          A 60-Hour Student Lead Hackathon Designed For{" "}
+          A 65-Hour Student Lead Hackathon Designed For{" "}
           <span className={styles.text}>Everybody.</span>
         </p>
         {/* <div className={styles.scrollDown}>
