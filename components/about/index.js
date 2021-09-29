@@ -7,76 +7,14 @@ import { render } from "react-dom";
 class About extends React.Component {
   constructor(props) {
     super(props);
-    // create a ref to store the textInput DOM element
-    this.textInput = React.createRef();
-    this.addEvLisner = this.addEvLisner.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
-    this.growingLine = { width: 0 };
-    this.lastScrollTop = 0;
-    this.addedYTiframe = false;
-    this.containerRef = React.createRef();
-    this.youtubeIframe = React.createRef();
-  }
-  handleScroll() {
-    const element = this.containerRef.current;
-    if (element) {
-      const windowOffsetTop = window.innerHeight + window.scrollY;
-
-      const elementBoxOffsetTop = element.offsetTop;
-      if (windowOffsetTop >= elementBoxOffsetTop) {
-        this.containerRef.current.classList.add("fade");
-        if (this.addedYTiframe === false) {
-          this.youtubeIframe.current.src =
-            "https://www.youtube.com/embed/KUIigF_7P5c";
-          this.addedYTiframe = true;
-        }
-      } else {
-        this.containerRef.current.classList.remove("fade");
-      }
-    }
-    var st = window.scrollY;
-    if (st > this.lastScrollTop) {
-      let newWidth =
-        Number(
-          this.growingLine.width
-            .toString()
-            .slice(0, this.growingLine.width.toString().length - 2)
-        ) + 0.4;
-      this.growingLine = {
-        width: newWidth + "vw",
-      };
-      this.forceUpdate();
-    } else {
-      let newWidth =
-        Number(
-          this.growingLine.width
-            .toString()
-            .slice(0, this.growingLine.width.toString().length - 2)
-        ) - 0.4;
-      if (newWidth < 0) newWidth = 0;
-      this.growingLine = {
-        width: newWidth + "vw",
-      };
-      this.forceUpdate();
-    }
-    this.lastScrollTop = st;
   }
 
-  addEvLisner() {
-    if (this.addedEvLisnr === true) return;
-    this.addedEvLisnr = true;
-
-    let elm = this;
-  }
   render() {
-    if (typeof window === "object") {
-      document.addEventListener("scroll", this.handleScroll, { passive: true });
-    }
     return (
-      <div ref={this.containerRef}>
+      <div>
         <div id="about" className={styles.body} onClick={this.handleScroll}>
           <div className={styles.division}>
-            <hr className={styles.growingLine} style={this.growingLine}></hr>
+            <hr className={styles.growingLine} style={{ width: "60vw" }}></hr>
           </div>
           <div className={styles.container}>
             <span className={styles.bigtext}>What is VividHacks?</span>
@@ -95,7 +33,7 @@ class About extends React.Component {
                 </div>
               </div>
               <iframe
-                ref={this.youtubeIframe}
+                src="https://www.youtube.com/embed/KUIigF_7P5c"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

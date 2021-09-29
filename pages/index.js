@@ -11,6 +11,26 @@ import * as React from "react";
 import { render } from "react-dom";
 import MetaTags from "react-meta-tags";
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
+
 const index = () => {
   return (
     <div>
@@ -30,13 +50,30 @@ const index = () => {
           content="https://www.vividhacks.tech/logo.svg"
         ></meta>
       </MetaTags>
+
       <Navbar />
-      <Landing />
-      <About />
-      <Sponsors />
-      <Team />
-      <TeamGrid />
-      <Faqs />
+
+
+      <FadeInSection>
+        <Landing />
+      </FadeInSection>
+
+      <FadeInSection>
+        <About />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Sponsors />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Team />
+        <TeamGrid />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Faqs />
+      </FadeInSection>
       <Footer />
     </div>
   );

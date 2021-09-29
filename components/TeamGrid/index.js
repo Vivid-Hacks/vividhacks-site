@@ -62,31 +62,10 @@ const team = [
 class Tg extends React.Component {
   constructor(props) {
     super(props);
-    this.handleScroll = this.handleScroll.bind(this);
     this.containerRef = React.createRef();
     this.addedImg = false;
   }
-  handleScroll() {
-    const element = this.containerRef.current;
-    if (element) {
-      const windowOffsetTop = window.innerHeight + window.scrollY;
-
-      const elementBoxOffsetTop = element.offsetTop;
-      if (windowOffsetTop >= elementBoxOffsetTop) {
-        this.containerRef.current.classList.add("fade");
-
-        if (this.addedImg === false) {
-          this.addedImg = true;
-        }
-      } else {
-        this.containerRef.current.classList.remove("fade");
-      }
-    }
-  }
   render() {
-    if (typeof window === "object") {
-      document.addEventListener("scroll", this.handleScroll, { passive: true });
-    }
     return (
       <div ref={this.containerRef}>
         <div className={styles.container}>

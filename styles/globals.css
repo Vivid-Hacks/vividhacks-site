@@ -1,10 +1,8 @@
-html,
-body {
+html, body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: #151515;
   color: white;
 }
@@ -17,10 +15,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
 .Typewriter__cursor {
   color: #17a178;
   font-size: 0;
 }
+
 .Typewriter__cursor::after {
   content: "urmom";
   color: rgba(0, 0, 0, 0);
@@ -29,27 +29,32 @@ a {
   font-size: 10px;
   border-bottom: 6px #17a178 solid;
 }
-@media (max-width: 500px){
+
+@media (max-width: 500px) {
   .Typewriter__cursor::after {
     font-size: 5px;
     border-bottom: 4px #17a178 solid;
   }
 }
+
 .Typewriter__wrapper {
   background-color: #1e1f22;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .about_faqwrapper__1e5Pe iframe {
   width: 100% !important;
   height: 200px !important;
   border: none;
 }
+
 .row-content-text::before {
   content: "hiboi";
   opacity: 0;
 }
+
 .row-title-text {
   margin-left: 15px;
 }
@@ -70,29 +75,29 @@ a {
     opacity: 1;
   }
 }
+
 .row-content-text {
   padding-bottom: 15px !important;
 }
 
-
 /* Nprogress stuff */
+
 #nprogress {
   pointer-events: none;
 }
 
 #nprogress .bar {
   background: linear-gradient(to left, #1380c4, #BD8BE5);
-
   position: fixed;
   z-index: 1031;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 5px;
 }
 
 /* Fancy blur effect */
+
 #nprogress .peg {
   display: block;
   position: absolute;
@@ -101,13 +106,13 @@ a {
   height: 100%;
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1.0;
-
   -webkit-transform: rotate(3deg) translate(0px, -4px);
-      -ms-transform: rotate(3deg) translate(0px, -4px);
-          transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
 }
 
 /* Remove these to get rid of the spinner */
+
 #nprogress .spinner {
   display: block;
   position: fixed;
@@ -120,14 +125,12 @@ a {
   width: 18px;
   height: 18px;
   box-sizing: border-box;
-
   border: solid 2px transparent;
   border-top-color: #ff027a;
   border-left-color: #ff027a;
   border-radius: 50%;
-
   -webkit-animation: nprogress-spinner 400ms linear infinite;
-          animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
 }
 
 .nprogress-custom-parent {
@@ -135,19 +138,28 @@ a {
   position: relative;
 }
 
-.nprogress-custom-parent #nprogress .spinner,
-.nprogress-custom-parent #nprogress .bar {
+.nprogress-custom-parent #nprogress .spinner, .nprogress-custom-parent #nprogress .bar {
   position: absolute;
 }
 
 @-webkit-keyframes nprogress-spinner {
-  0%   { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
+
 @keyframes nprogress-spinner {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 /* end Nprogress stuff*/
 
 a {
@@ -157,6 +169,21 @@ a {
 #navbar {
   background-color: black !important;
 }
+
 .MsoNormal {
   color: black;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(5vh);
+  visibility: hidden;
+  transition: opacity 2s ease-out, transform 1000ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transsform, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
