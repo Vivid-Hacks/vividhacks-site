@@ -93,6 +93,14 @@ class Sponsor extends React.Component {
                 <span>Leading Learners</span>
               </div>
             </div>
+            <div className={styles.sponsor}>
+              <a href="https://launchx.com/" target="_blank">
+                <img src="/launchx.png" width="240"></img>
+              </a>
+              <div>
+                <span>LaunchX</span>
+              </div>
+            </div>
           </div>
           <p className={styles.para}>Want to be our partner?</p>
           <button className={styles.button} style={{ marginBottom: 0 }}>
