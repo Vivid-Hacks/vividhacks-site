@@ -49,6 +49,16 @@ const team = [
   {
     index: 4,
     post: "Organizer",
+    name: "Emily Cai",
+    img: "/emily.jpg",
+    github: "https://github.com/itzEmily",
+    favoriteLang: "Javascript",
+    yrsTrappedInVim: "17",
+    color: "white",
+  },
+  {
+    index: 5,
+    post: "Organizer",
     name: "Manish",
     img: "/mePFP.jpg",
     github: "https://github.com/Manish674",
