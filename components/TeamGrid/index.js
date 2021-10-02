@@ -67,6 +67,17 @@ const team = [
     website: "",
     color: "white",
   },
+  {
+    index: 6,
+    post: "Organizer",
+    name: "Simon",
+    img: "/Simon.png",
+    github: "https://github.com/SimonZhao7",
+    favoriteLang: "Python",
+    yrsTrappedInVim: "17",
+    website: "",
+    color: "white",
+  },
 ];
 
 class Tg extends React.Component {
