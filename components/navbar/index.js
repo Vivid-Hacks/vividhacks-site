@@ -20,6 +20,7 @@ class Navbar extends React.Component {
     this.addEvLisner = this.addEvLisner.bind(this);
     this.menu = styles.linkContainer;
     this.menuStyling = {};
+    this.navbarRef = React.createRef();
   }
 
   toggleMobileNavbar(close) {
@@ -53,13 +54,25 @@ class Navbar extends React.Component {
       elm.forceUpdate();
     });
   }
-
+  componentDidMount() {
+    var oldThis = this;
+    if (window.pageYOffset === 0){
+      oldThis.navbarRef.current.style.background = "rgba(0, 0, 0, 0)"
+    }
+    window.addEventListener("scroll", function(){
+      if (window.pageYOffset === 0){
+        oldThis.navbarRef.current.style.background = "rgba(0, 0, 0, 0)"
+      }else{
+        oldThis.navbarRef.current.style.background = ""
+      }
+    })
+  }
   render() {
     if (typeof window === "object") {
       if (window.location.pathname === "/") {
         return (
           <div className={`${styles.animate}`}>
-            <div className={styles.container}>
+            <div className={styles.container} ref={this.navbarRef}>
               <div className={styles.logo}>
                 <CrossLink href="/">
                   <a>
