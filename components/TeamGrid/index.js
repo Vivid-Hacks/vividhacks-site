@@ -25,17 +25,6 @@ const team = [
     color: "white",
   },
   {
-    index: 2,
-    post: "Organizer",
-    name: "Vansh Gehlot",
-    img: "/Vansh.png",
-    github: "https://github.com/VanshGehlot",
-    favoriteLang: "C++",
-    yrsTrappedInVim: 19,
-    website: "https://letshack.me/",
-    color: "black",
-  },
-  {
     index: 3,
     post: "Organizer",
     name: "Ivoine Strachan",
@@ -48,7 +37,7 @@ const team = [
   },
   {
     index: 4,
-    post: "Organizer",
+    post: "Sponsorships",
     name: "Emily Cai",
     img: "/emily.jpg",
     github: "https://github.com/itzEmily",
@@ -58,7 +47,7 @@ const team = [
   },
   {
     index: 5,
-    post: "Organizer",
+    post: "Lead-Developer",
     name: "Manish",
     img: "/mePFP.jpg",
     github: "https://github.com/Manish674",
@@ -69,7 +58,7 @@ const team = [
   },
   {
     index: 6,
-    post: "Organizer",
+    post: "Sponsorships",
     name: "Simon",
     img: "/Simon.png",
     github: "https://github.com/SimonZhao7",
