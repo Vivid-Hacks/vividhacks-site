@@ -19,7 +19,12 @@
   pointer-events: none;
 }
 
-@keyframes spin { 100% { transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 .heading {
   text-align: center;
@@ -29,6 +34,7 @@
 
 .topHeading {
   font-size: min(7vw, 100px);
+  margin-top: 9rem;
 }
 
 .everyoneHeading {
