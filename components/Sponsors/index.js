@@ -11,6 +11,7 @@ class Sponsor extends React.Component {
     this.hackclubIframe = React.createRef();
 
     this.openModal = this.openModal.bind(this);
+    this.clickListener = this.clickListener.bind(this);
   }
 
   openModal() {
@@ -19,18 +20,24 @@ class Sponsor extends React.Component {
     this.modalRef.current.style.display = "block";
     this.coverBG.current.style.display = "block";
   }
-  render() {
-    var classThis = this;
-    if (typeof window === "object") {
-      document.addEventListener("click", function (event) {
-        if (classThis.modalRef.current.contains(event.target)) {
-        } else {
-          if (classThis.modalBtn.current.contains(event.target)) return;
-          classThis.modalRef.current.style.display = "none";
-          classThis.coverBG.current.style.display = "none";
-        }
-      });
+
+  componentDidMount() {
+    document.addEventListener("click", () => this.clickListener(event))
+  }
+  componentWillUnmount() {
+    document.removeEventListener("click", this.clickListener)
+  }
+
+  clickListener(event) {
+    if (!this.modalRef.current) return;
+    if (this.modalRef.current.contains(event.target)) {
+    } else {
+      if (this.modalBtn.current.contains(event.target)) return;
+      this.modalRef.current.style.display = "none";
+      this.coverBG.current.style.display = "none";
     }
+  }
+  render() {
     return (
       <div ref={this.containerRef}>
         <div

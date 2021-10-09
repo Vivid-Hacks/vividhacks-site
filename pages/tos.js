@@ -10,7 +10,7 @@ const index = () => {
           backgroundColor: "white",
           paddingLeft: "20px",
           paddingLeft: "20px",
-          paddingTop: "50px",
+          paddingTop: "200px",
         }}
       >
         <div align="center" style={{ textAlign: "left", lineHeight: 1 }}>
