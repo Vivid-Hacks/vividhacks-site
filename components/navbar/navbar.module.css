@@ -155,3 +155,41 @@
     opacity: 1;
   }
 }
+.joindiscord {
+  background-color: #5865F2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.joindiscord:hover {
+  background-color: #4752C4 !important;
+}
+
+.discord {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 60%);
+  background-color: #7289DA;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  z-index: 21;
+}
+
+.bg {
+  position: fixed;
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
