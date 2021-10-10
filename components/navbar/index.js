@@ -33,6 +33,9 @@ class Navbar extends React.Component {
     this.addedEvLisnr = true;
   }
   componentDidMount() {
+    if (window.location.hostname.includes(".tk")){
+      return window.location.href = "https://www.vividhacks.tech"+window.location.pathname
+    }
     var oldThis = this;
     if (window.pageYOffset === 0) {
       this.navbarRef.current.style.background = "rgba(0, 0, 0, 0)"
