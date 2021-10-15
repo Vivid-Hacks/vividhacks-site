@@ -63,7 +63,7 @@ class Navbar extends React.Component {
         <div className={styles.discord} style={{display: "none"}} ref={this.discordModal} id="discordModal">
           <iframe src="https://discord.com/widget?id=873307975572402207&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
           <br />
-          <button onClick={() => { window.open("https://discord.com/invite/yhHRz8ng") }} className={styles.joindiscord}><a href="#" target="_blank">Join Discord!</a></button>
+          <button onClick={() => { window.open("https://vivd.tk/discord") }} className={styles.joindiscord}><a href="#" target="_blank">Join Discord!</a></button>
         </div>
         <Content callback={this.callback} />
       </div>
