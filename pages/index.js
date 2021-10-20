@@ -49,6 +49,22 @@ const index = () => {
           property="og:image"
           content="https://www.vividhacks.tech/logo.svg"
         ></meta>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-32HZRLPPZT`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-32HZRLPPZT', {
+                      page_path: window.location.pathname,
+                    });
+                  `,
+          }}
+        />
       </MetaTags>
 
       <Navbar />
