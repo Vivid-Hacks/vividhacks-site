@@ -9,7 +9,7 @@ import Faqs from "../components/faqs";
 import Footer from "../components/Footer";
 import * as React from "react";
 import { render } from "react-dom";
-import MetaTags from "react-meta-tags";
+import Head from "next/head";
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
@@ -34,7 +34,7 @@ function FadeInSection(props) {
 const index = () => {
   return (
     <div>
-      <MetaTags>
+      <Head>
         <title>Vivid Hacks</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
         <meta name="description" content="Some description."></meta>
@@ -65,7 +65,7 @@ const index = () => {
                   `,
           }}
         />
-      </MetaTags>
+      </Head>
 
       <Navbar />
 
