@@ -109,6 +109,14 @@ class Sponsor extends React.Component {
                 <span>Linode</span>
               </div>
             </div>
+            <div className={styles.sponsor}>
+              <a href="https://artofproblemsolving.com/" target="_blank">
+                <img src="/aops.png" width="300"></img>
+              </a>
+              <div>
+                <span>Art of Problem Solving</span>
+              </div>
+            </div>
           </div>
           <p className={styles.para}>Want to be our partner?</p>
           <button className={styles.button} style={{ marginBottom: 0 }}>
