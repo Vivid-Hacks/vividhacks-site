@@ -110,6 +110,14 @@ class Sponsor extends React.Component {
               </div>
             </div>
             <div className={styles.sponsor}>
+              <a href="https://codedamn.com" target="_blank">
+                <img src="/codedamn.png" width="280"></img>
+              </a>
+              <div>
+                <span>Codedamn</span>
+              </div>
+            </div>
+            <div className={styles.sponsor}>
               <a href="https://artofproblemsolving.com/" target="_blank">
                 <img src="/aops.png" width="300"></img>
               </a>
