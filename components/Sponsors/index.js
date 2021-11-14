@@ -56,8 +56,8 @@ class Sponsor extends React.Component {
           <h2 className={styles.heading}>Sponsors</h2>
           <div className={styles.sponsorGrid}>
              <div className={styles.sponsor}>
-              <a href="https://www.echoar.xyz/" target="_blank"><img src="/echoarlogo.png"></img></a>
-              <div><span>Echo AR</span></div>
+              <a href="https://www.echo3d.co/" target="_blank"><img width="250" src="/echoarlogo.png"></img></a>
+              <div><span>Echo 3D</span></div>
             </div>
             <div className={styles.sponsor}>
               <a href="https://hackclub.org" target="_blank">
