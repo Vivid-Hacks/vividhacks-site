@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.horizontalRule {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border: 2px solid white;
+  height: 2px;
+  width: 20vw;
+}
+
+.scrollSvgContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 45px; 
+}
+
+.date {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.text {
+  margin-bottom: 1rem;
+}
+
+.button::before{ 
+  content: '';
+  border: 2px solid yellow;
+}
+

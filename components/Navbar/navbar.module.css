@@ -33,7 +33,6 @@
   cursor: pointer;
 }
 
-
 @media (min-width: 1024px) {
   .links {
     display: flex; 
