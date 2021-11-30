@@ -1,0 +1,40 @@
+.container {
+  text-align: center;
+}
+
+.textWrapper {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.para {
+  text-align: start;
+  font-size: 1.2rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .textWrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .para {
+    width: 60%;
+  }
+
+  .heading {
+   text-align: center; 
+  }
+}
+
