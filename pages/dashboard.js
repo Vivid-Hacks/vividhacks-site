@@ -1,6 +1,6 @@
 import styles from "../components/Navbar/navbar.module.css";
 import logo from "../public/logo.png";
-import Sidebar from "../components/Sidebar";
+import Dash from "../components/Dash";
 
 const Dashboard = () => {
   return (
@@ -16,7 +16,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <Sidebar />
+      <Dash />
     </div>
   );
 };
