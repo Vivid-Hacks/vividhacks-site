@@ -1,15 +1,26 @@
 import styles from "../../styles/teammates.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import connectToDb from "../../utils/dbConnect";
+import Teammates from "../../components/TeamMates";
 
 const TeamMate = (props) => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    setData(props.data);
+  }, []);
+
   const [mate, setMate] = useState({
     name: "",
     position: "",
     age: "",
   });
 
+  const [previewUrl, setPrivewUrl] = useState();
   const [media, setMedia] = useState();
+
+  const handleOnChange = (e) => {
+    setMate({ ...mate, [e.target.name]: e.target.value });
+  };
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -46,20 +57,48 @@ const TeamMate = (props) => {
     });
   };
 
+  const handleImgChange = (e) => {
+    setMedia(e.target.files[0]);
+    const url = URL.createObjectURL(e.target.files[0]);
+    setPrivewUrl(url);
+  };
+
   return (
     <div>
       <form className={styles.form} onSubmit={(e) => handleOnSubmit(e)}>
-        <input name="name" placeholder="name" />
-        <input name="position" placeholder="position" />
-        <input name="age" type="number" placeholder="age" />
+        <input
+          className={styles.input}
+          name="name"
+          placeholder="name"
+          value={mate.name}
+          onChange={(e) => handleOnChange(e)}
+        />
+        <input
+          className={styles.input}
+          name="position"
+          placeholder="position"
+          value={mate.position}
+          onChange={(e) => handleOnChange(e)}
+        />
+        <input
+          className={styles.input}
+          name="age"
+          type="number"
+          placeholder="age"
+          value={mate.age}
+          onChange={(e) => handleOnChange(e)}
+        />
 
         <input
           type="file"
           accept="image/*"
-          onChange={(e) => setMedia(e.target.files[0])}
+          onChange={(e) => handleImgChange(e)}
+          className={styles.input}
         />
         <button type="submit">Submit</button>
       </form>
+      {previewUrl ? <img src={previewUrl} className={styles.previewImg} /> : ""}
+      <Teammates data={data} />
     </div>
   );
 };

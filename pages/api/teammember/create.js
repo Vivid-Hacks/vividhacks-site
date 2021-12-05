@@ -1,11 +1,20 @@
 import connectToDb from "../../../utils/dbConnect";
 
-export default async function (req, res) {
-  console.log(req.body);
+const createTeamMate = async (req, res) => {
+  const { name, position, age, mediaUrl } = req.body;
 
-  //const { db } = await connectToDb();
-  //const data = await db.collection("team members").find().limit(2).toArray();
-  const data = "data";
+  const { db } = await connectToDb();
 
-  res.status(200).json({ success: true, data: { data } });
-}
+  const collection = db.collection("team members");
+
+  const newData = await collection.insertOne({
+    name,
+    position,
+    age,
+    mediaUrl,
+  });
+
+  res.status(201).json({ success: true, data: { newData } });
+};
+
+export default createTeamMate;
