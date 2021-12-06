@@ -1,7 +1,8 @@
+import Link from "next/link";
 import styles from "../../components/Navbar/navbar.module.css";
 import logo from "../../public/logo.png";
 import Dash from "../../components/Dash";
-import connectToDb from "../../utils/dbConnect";
+import clientPromise from "../../utils/dbConnect";
 
 const Dashboard = (props) => {
   return (
@@ -17,6 +18,11 @@ const Dashboard = (props) => {
           </div>
         </div>
       </div>
+      <div>
+        <Link href="/dashboard">Date</Link>
+        <Link href="/dashboard/teammates">Team</Link>
+        <Link href="/dashboard/sponser">Sponser</Link>
+      </div>
       <Dash data={props.data} />
     </div>
   );
@@ -25,8 +31,9 @@ const Dashboard = (props) => {
 export default Dashboard;
 
 export async function getServerSideProps(context) {
-  const { db } = await connectToDb();
-  const data = await db.collection("data").find().limit(2).toArray();
+  const client = await clientPromise;
+  const db = client.db("vividhacksDB");
+  const data = await db.collection("data").find().toArray();
   const properties = JSON.parse(JSON.stringify(data));
 
   return {

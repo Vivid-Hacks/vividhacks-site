@@ -1,6 +1,6 @@
 import styles from "../../styles/teammates.module.css";
 import { useState, useEffect } from "react";
-import connectToDb from "../../utils/dbConnect";
+import clientPromise from "../../utils/dbConnect";
 import Teammates from "../../components/TeamMates";
 
 const TeamMate = (props) => {
@@ -106,7 +106,8 @@ const TeamMate = (props) => {
 export default TeamMate;
 
 export async function getServerSideProps(context) {
-  const { db } = await connectToDb();
+  const client = await clientPromise;
+  const db = client.db("vividhacksDB");
   const data = await db.collection("team members").find().toArray();
   const properties = JSON.parse(JSON.stringify(data));
 

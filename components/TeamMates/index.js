@@ -11,7 +11,7 @@ const Team = (props) => {
 
   const mappendItems = data.map((props) => <Member {...props} />);
 
-  return <div className={styles.TeamContainer}>{mappendItems}</div>;
+  return <div className={styles.card__grid}>{mappendItems}</div>;
 };
 
 export default Team;

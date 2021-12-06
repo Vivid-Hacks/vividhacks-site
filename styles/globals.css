@@ -1,3 +1,10 @@
+:root {
+  /* --overall-height: 23rem; */
+  --overall-height: min(65vw,23rem);
+  --overall-width: min(45%, 237px);
+  --card-border-radius: 10px;
+}
+
 html,
 body {
   padding: 0;

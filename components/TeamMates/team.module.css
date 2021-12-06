@@ -1,55 +1,120 @@
-.card {
-  width: max-content;
+.card__grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* gap: 0.5rem; */
-  margin-bottom: 1rem;
-  border-radius: 1rem; 
-  background: linear-gradient(180deg, #A62C58 0%, #432C58 81.09%);
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.card {
   margin: auto;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  /* width: 20rem; */
+  width: var(--overall-width);
+  height: var(--overall-height);
+  border-radius: var(--card-border-radius);
 }
 
-.card__front{
-  backface-visibility: hidden;
-}
-
-.img {
-  transition: all ease 500ms;
-}
-
-.imgWrapper:hover .img{
-  transform: rotateY(0.25turn);
-}
-
-.imgWrapper {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  backface-visibility: hidden;
+.card__content {
+  transition: all ease 0.7s;
   position: relative;
+  transform-style: preserve-3d; 
 }
 
-.cardAbout {
-  width: 100%;
-  text-align: center;
-  padding: 0.5rem 0;
-  margin-top: 0.4rem;
-  border-radius: 0.8rem;
-  background: linear-gradient(180deg, #A62C58 0%, #432C58 100%);
-}
-
-.cardHeader {
-  padding: 0.5rem 0;
-  text-align: center;
-}
-
-.backContent {
+.card__front,
+.card__back {
   position: absolute;
-  border: 2px solid white;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card__front {
+  background: lightblue;
+}
+
+.card__back {
+  background: white;
+  transform: rotateY(0.5turn);
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn)
+}
+
+.card__text {
+  position: relative;
+  top: -125px;
+  font-weight: bold;
+  /* padding-left: 1rem; */
+  padding-left: 0.5rem;
+}
+
+.card__position {
+  /* font-size: 2rem; */
+  font-size: 1.2rem;
+}
+
+.card__name {
+  font-size: 2.5rem;
+}
+
+
+.card__img {
+  height: var(--overall-height);
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--card-border-radius);
+}
+
+.horizontal {
+ border: 2px solid white;
+ width: 3rem;
+ margin-top: 0.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.card__text_back {
+  position: relative;
+  top: -150px;
+  /* font-size: 1.2rem; */
+  font-size: initial;
+  padding-left: 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.text_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 0.7rem 0rem;
+}
+
+.card__link {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link_button {
+  background: #35aff3; 
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  cursor:pointer;
+}
+
+.card__about_back{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card__response {
+  background: #35aff3;
+  border-radius: 0.2rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
