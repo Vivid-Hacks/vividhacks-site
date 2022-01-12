@@ -1,6 +1,7 @@
 import styles from "./countdown.module.css";
 import { useState } from "react";
 
+
 const Countdown = () => {
   // const [timer, setTimer] = useState();
   const [day, setDay] = useState(0);
@@ -9,19 +10,19 @@ const Countdown = () => {
   const [sec, setSec] = useState(0);
   // const [hr, setHr] = useState(0);
 
-  const countDownDate = new Date("nov 19, 2021 17:0:0 EST").getTime();
+  // const countDownDate = new Date("nov 19, 2021 17:0:0 EST").getTime();
 
-  setInterval(() => {
-    // current time
-    var today = new Date().getTime();
+  // setInterval(() => {
+  //   // current time
+  //   var today = new Date().getTime();
 
-    // launch day - current time
-    var distance = countDownDate - today;
-    setDay(Math.floor(distance / (1000 * 60 * 60 * 24)));
-    setHour(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-    setMin(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-    setSec(Math.floor((distance % (1000 * 60)) / 1000));
-  }, 1000);
+  //   // launch day - current time
+  //   var distance = countDownDate - today;
+  //   setDay(Math.floor(distance / (1000 * 60 * 60 * 24)));
+  //   setHour(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+  //   setMin(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+  //   setSec(Math.floor((distance % (1000 * 60)) / 1000));
+  // }, 1000);
 
   return (
     <div className={styles.animate}>
