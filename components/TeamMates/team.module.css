@@ -1,3 +1,13 @@
+.team__text_wrapper {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team__text {
+  font-weight: normal;
+}
+
 .card__grid {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +68,8 @@
 }
 
 .card__name {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: 1.7rem;
 }
 
 

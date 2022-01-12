@@ -5,6 +5,7 @@ import Teammates from "../../components/TeamMates";
 
 const TeamMate = (props) => {
   const [data, setData] = useState();
+
   useEffect(() => {
     setData(props.data);
   }, []);

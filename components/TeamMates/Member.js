@@ -1,7 +1,6 @@
 import styles from "./team.module.css";
 
 const Member = (props) => {
-  console.log(props);
   return (
     <div className={styles.card}>
       <div className={styles.card__content}>
