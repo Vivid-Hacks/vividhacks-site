@@ -1,3 +1,10 @@
+.faq__heading {
+  width: 95%;
+  margin: auto;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
 .faq__container {
   border-bottom: 2px solid white;
   width: 95%;
@@ -6,17 +13,31 @@
   margin: auto;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .faq__wrapper {
-  max-height: 0px;
   overflow: hidden;
+  transition: all .3s;
+}
+
+.faq__que_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5rem;
 }
 
 .faq__que {
   margin-bottom: 0.5rem;
   font-size: 1.2rem; 
   font-weight: bold;
+}
+
+.faq__arrow {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all .3s;
 }
 
 .faq__ans {

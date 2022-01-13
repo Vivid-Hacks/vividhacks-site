@@ -14,7 +14,7 @@ const Faq = (props) => {
 
   return (
     <> 
-      <h2>FAQS</h2>
+      <h2 className={styles.faq__heading}>FAQS</h2>
       {mappedData}
     </> 
   )

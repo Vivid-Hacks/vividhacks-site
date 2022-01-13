@@ -3,6 +3,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import TeamMates from "../components/TeamMates";
 import Faq from "../components/Faq";
+import Footer from "../components/Footer"
 
 // images
 import eddy from "../public/team/eddy.jpg"
@@ -12,7 +13,6 @@ import simon from "../public/team/Simon.png"
 import emily from "../public/team/emily.jpg"
 import manish from "../public/team/manish.png"
 
-// console.log(name, mediaUrl, position)
 const data = [
   {
     name: 'Eddy Zhu',
@@ -82,6 +82,7 @@ const Index = () => {
       <About />
       <TeamMates data={data} />
       <Faq data={qna} />
+      <Footer />
     </>
   );
 };
