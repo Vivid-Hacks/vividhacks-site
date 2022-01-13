@@ -24,6 +24,9 @@
 }
 
 @media (min-width: 1024px) {
+  .wrapper {
+    max-width: 1200px;
+  }
   .textWrapper {
     flex-direction: row-reverse;
     align-items: center;

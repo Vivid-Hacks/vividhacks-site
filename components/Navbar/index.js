@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="#" className={styles.link}>
             TIMELINE
           </a>
-          <a href="#" className={styles.link}>
+          <a href="#about" className={styles.link}>
             ABOUT
           </a>
           <a href="#" className={styles.link}>
@@ -33,7 +33,7 @@ const Navbar = () => {
           className={styles.menuButton}
         />
       </div>
-      <MobileMenu open={open} />
+      <MobileMenu open={open} setOpen={setOpen} />
     </div>
   );
 };

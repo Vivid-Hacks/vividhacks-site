@@ -2,7 +2,7 @@ import styles from "./about.module.css";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div id="about" className={styles.container}>
       <div className={styles.wrapper}>
         <h1 className={styles.heading}>What is VividHacks ?</h1>
         <div className={styles.textWrapper}>

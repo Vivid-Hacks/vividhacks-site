@@ -3,6 +3,7 @@
   margin: auto;
   font-size: 2rem;
   margin-top: 4rem;
+  max-width: 1200px;
 }
 
 .faq__container {
@@ -14,6 +15,7 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
+  max-width: 1200px;
 }
 
 .faq__wrapper {

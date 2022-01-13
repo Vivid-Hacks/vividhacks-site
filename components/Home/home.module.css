@@ -1,8 +1,14 @@
+  .container {
+    margin-top: 5rem;
+    margin-bottom : 5rem;
+  }
+
 .wrapper {
   display: flex;
   flex-direction: column; 
   align-items: center; 
   text-align: center;
+  gap: 0.5rem;
 }
 
 .horizontalRule {
@@ -122,6 +128,11 @@
 }
 
 @media (min-width: 500px) {
+
+  .heading {
+    font-size: min(6vw, 68px);
+  }
+
   .button:hover {
     background: #0449ca;
     padding: 0.8rem 1.5rem;
@@ -130,10 +141,12 @@
     color: white;
     cursor: pointer;
   }
+
   .offset:hover {
     color: white;
     box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
   }
+
   .offset:hover, .offset:focus .buttonSpan {
     position: inherit;
   }

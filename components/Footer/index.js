@@ -1,6 +1,9 @@
 import React from "react";
+import Link from "next/link";
+
 import logo from "../../public/logo.png";
 import styles from "./footer.module.css"; 
+
 import { AiFillInstagram} from "react-icons/ai";
 import { SiTwitter} from "react-icons/si";
 import { RiLinkedinFill } from "react-icons/ri"
@@ -11,10 +14,28 @@ const Footer = () => {
     <div className={styles.footer__container}>
       <img className={styles.footer__img} src={logo.src} alt="logo"/>
       <div className={styles.footer__socials}>
-        <AiFillInstagram />
-        <SiTwitter />
-        <RiLinkedinFill />
-        <FaDiscord /> 
+
+        <Link href="https://instagram.com" passHref>
+          <a target="_blank">
+            <AiFillInstagram />
+          </a>
+        </Link>
+
+        <Link href="https://instagram.com" passHref>
+          <a target="_blank">
+            <SiTwitter />
+          </a>
+        </Link>
+        <Link href="https://instagram.com" passHref>
+          <a target="_blank">
+            <RiLinkedinFill />
+          </a>
+        </Link>
+        <Link href="https://instagram.com" passHref>
+          <a target="_blank">
+            <FaDiscord /> 
+          </a>
+        </Link>
       </div>
       <div className={styles.footer__msg}>
         Hacking for everyone

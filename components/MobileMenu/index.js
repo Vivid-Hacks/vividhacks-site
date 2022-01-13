@@ -1,6 +1,6 @@
 import styles from "./mm.module.css";
 
-const MobileMenu = ({ open }) => {
+const MobileMenu = ({ open, setOpen }) => {
   const displayValue = open ? 0 : "-100";
 
   return (
@@ -10,10 +10,10 @@ const MobileMenu = ({ open }) => {
     >
       <div className={styles.slideWrapper}>
         <div className={styles.mobileLinks}>
-          <a href="#">DEVPOST</a>
-          <a href="#">TIMELINE</a>
-          <a href="#">ABOUT</a>
-          <a href="#">REGISTER</a>
+          <a href="#" onClick={() => setOpen(false)} >DEVPOST</a>
+          <a href="#" onClick={() => setOpen(false)}>TIMELINE</a>
+          <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
+          <a href="#" onClick={() => setOpen(false)}>REGISTER</a>
         </div>
       </div>
     </div>
