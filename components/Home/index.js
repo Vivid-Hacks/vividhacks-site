@@ -11,6 +11,8 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
+      <div className={`${styles.gradient} ${styles.left}`}></div>
+      <div className={`${styles.gradient} ${styles.right}`}></div>
       <div className={styles.wrapper}>
         <h1 className={styles.heading}>
           Hacking for <br />
