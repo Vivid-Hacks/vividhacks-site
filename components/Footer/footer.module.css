@@ -1,0 +1,28 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 0.8rem;
+}
+
+.footer__img {
+  width: 4.5rem;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.footer__msg {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer__copyright {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
