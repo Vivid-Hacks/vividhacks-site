@@ -15,23 +15,23 @@ const Footer = () => {
       <img className={styles.footer__img} src={logo.src} alt="logo"/>
       <div className={styles.footer__socials}>
 
-        <Link href="https://instagram.com" passHref>
+        <Link href="https://www.instagram.com/vivid_hacks/" passHref>
           <a target="_blank">
             <AiFillInstagram />
           </a>
         </Link>
 
-        <Link href="https://instagram.com" passHref>
+        <Link href="#" passHref>
           <a target="_blank">
             <SiTwitter />
           </a>
         </Link>
-        <Link href="https://instagram.com" passHref>
+        <Link href="#" disable passHref>
           <a target="_blank">
             <RiLinkedinFill />
           </a>
         </Link>
-        <Link href="https://instagram.com" passHref>
+        <Link href="https://discord.com/invite/yDkSt4VdNj" passHref>
           <a target="_blank">
             <FaDiscord /> 
           </a>
