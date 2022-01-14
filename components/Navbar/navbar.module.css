@@ -1,0 +1,53 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.logo {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem; 
+}
+
+.img {
+  width: 3rem!important;
+  margin-right: 1rem;
+}
+
+.wrapper {
+  width: 90%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: none;
+}
+
+.menuButton {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .links {
+    display: flex; 
+  }
+
+  .link {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .img {
+    width: 5rem!important;
+  }
+}

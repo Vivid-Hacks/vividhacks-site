@@ -1,0 +1,24 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.input {
+
+}
+
+.previewImg {
+  position: relative;
+  max-width: 300px;
+}
+
+/* width for mobile 180 */
+/* height for mobile 250 */
+
+
+/* width for pc 250 */
+/* height for pc 400 */

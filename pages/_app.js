@@ -1,34 +1,24 @@
-import '../styles/globals.css'
-
-
-// import next's router for callbacks
-import Router from 'next/router';
-import App, { Container } from 'next/app';
-import NProgress from 'nprogress';
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
-  if (publicRuntimeConfig !== undefined){
-    NProgress.configure({ showSpinner: publicRuntimeConfig.NProgressShowSpinner });
-
-
-    Router.onRouteChangeStart = (url) => {
-        // Some page has started loading
-        NProgress.start();
-    };
-    
-    Router.onRouteChangeComplete = (url) => {
-        // Some page has finished loading
-        NProgress.done();
-    };
-    
-    Router.onRouteChangeError = (err, url) => {
-      NProgress.done();
-    };
-  }
+import { useEffect } from "react";
+import "../styles/globals.css";
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      once: true
+    })
+  }, [])
+  return ( 
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  );
 }
 
-
-export default MyApp
+export default MyApp;

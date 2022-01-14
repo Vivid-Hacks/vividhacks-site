@@ -1,0 +1,175 @@
+.container {
+  margin-top: 5rem;
+  margin-bottom : 5rem;
+}
+
+.gradient {
+  position: absolute;
+  z-index: 0;
+  width: 253px;
+  height: 253px;
+  border-radius: 50%;
+  /* background: rgba(248, 21, 253, 0.6); */
+  filter: blur(455px);
+}
+
+.left {
+  background: rgba(248, 21, 253, 0.6);
+  left: 0;
+}
+
+.right {
+  background: rgba(255, 199, 0, 0.6);
+  right: 0;
+  bottom: 0;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.horizontalRule {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border: 2px solid white;
+  height: 2px;
+  width: 20vw;
+}
+
+.scrollSvgContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 45px; 
+}
+
+.date {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.text {
+  margin-bottom: 1rem;
+}
+
+
+.typewriterContainer {
+  width: max-content;
+  background: #1e1f22;
+  display: inline-flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+}
+
+.button {
+  background: #015aff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.modal {
+  display: none;
+}
+
+.offset {
+  position: relative;
+  cursor: pointer;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  transition: 0.25s;
+  color: var(--color);
+  box-shadow: 0.5em 0.5em 0 0 var(--color), inset 0.5em 0.5em 0 0 var(--color);
+  border: none !important;
+}
+
+.buttonSpan {
+  position: inherit;
+  top: 3px;
+  left: 3px;
+  transition: all 0.1s ease;
+  font-size: 1.5em;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #17a178;
+}
+
+.invisible {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+}
+
+@media (max-width: 500px) {
+  .buttonSpan {
+    font-size: 1.2em;
+  }
+  .offset {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+.animate {
+  animation: moveUp 1s;
+  opacity: 1;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (min-width: 500px) {
+
+  .heading {
+    font-size: min(6vw, 68px);
+  }
+
+  .button:hover {
+    background: #0449ca;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .offset:hover {
+    color: white;
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
+
+  .offset:hover, .offset:focus .buttonSpan {
+    position: inherit;
+  }
+}
