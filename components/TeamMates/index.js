@@ -19,7 +19,7 @@ const Team = (props) => {
         <h3 className={styles.team__text} style={{ color: "#35AFF4" }}>
           VIVID HACKS
         </h3>
-        <h3 className={styles.team__text}>shar the vision of our community</h3>
+        <h3 className={styles.team__text}>share the vision of our community</h3>
       </div>
       <div className={styles.card__grid}>{mappendItems}</div>
     </div>
