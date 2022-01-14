@@ -50,6 +50,7 @@
 .hours {
   animation: leftToRight 1s;
 }
+
 @keyframes leftToRight {
   from {
     transform: translateX(-100vw);
@@ -58,6 +59,7 @@
     transform: none;
   }
 }
+
 @keyframes rightToLeft {
   from {
     transform: translateX(100vw);

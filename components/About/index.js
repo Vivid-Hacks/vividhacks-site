@@ -4,9 +4,11 @@ const About = () => {
   return (
     <div id="about" className={styles.container}>
       <div className={styles.wrapper}>
-        <h1 className={styles.heading}>What is VividHacks ?</h1>
+        <h1 data-aos="fade-up" className={styles.heading}>
+          What is VividHacks ?
+        </h1>
         <div className={styles.textWrapper}>
-          <p className={styles.para}>
+          <p data-aos="fade-right" className={styles.para}>
             Vivid Hacks is a 65 hour hackathon for everybody. We will provide
             you with the mentors to bring your dream project to{" "}
             <span style={{ color: "#68EB3B" }}>reality</span>. Build something{" "}
@@ -16,6 +18,7 @@ const About = () => {
             to miss. 😛
           </p>
           <iframe
+            data-aos="fade-left"
             src="https://www.youtube.com/embed/KUIigF_7P5c"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

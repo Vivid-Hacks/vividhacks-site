@@ -1,9 +1,7 @@
-import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
 import TeamMates from "../components/TeamMates";
 import Faq from "../components/Faq";
-import Footer from "../components/Footer";
 
 // images
 import eddy from "../public/team/eddy.jpg";
@@ -18,31 +16,49 @@ const data = [
     name: "Eddy Zhu",
     mediaUrl: eddy.src,
     position: "Organizer",
+    github: "https://github.com/Tronbo",
+    favLang: "C#/C++",
+    age: 12
   },
   {
     name: "Joshua Zhu",
     mediaUrl: joshua.src,
     position: "Oraganizer",
+    github: "https://github.com/Joshua-Zou",
+    favLang: "Node/C++",
+    age: 14
   },
   {
     name: "Ivoine Strachan",
     mediaUrl: sike.src,
     position: "Organizer",
+    github: "https://github.com/sikethedev",
+    favLang: "Javascript",
+    age: 16
   },
   {
     name: "Emily Cai",
     mediaUrl: emily.src,
     position: "Sponsership",
+    github: "https://github.com/itzEmily",
+    favLang: "Javascript",
+    age: 17
   },
   {
     name: "Manish",
     mediaUrl: manish.src,
     position: "lead developer",
+    github: "https://github.com/Manish674",
+    favLang: "Javascript",
+    age: 16
   },
   {
     name: "Simon",
     mediaUrl: simon.src,
     position: "Sponsership",
+    github: "https://github.com/SimonZhao7",
+    favLang: "Python",
+    age: 17
   },
 ];
 

@@ -1,8 +1,9 @@
 import styles from "./team.module.css";
+import Link from "next/link";
 
 const Member = (props) => {
   return (
-    <div className={styles.card}>
+    <div data-aos="fade-down" className={styles.card}>
       <div className={styles.card__content}>
         <div className={styles.card__front}>
           <img
@@ -26,7 +27,10 @@ const Member = (props) => {
           <div className={styles.card__text_back}>
             <div className={styles.text_wrapper}>
               <div className={styles.card__link}>
-                Github: <button className={styles.link_button}>Click me</button>
+                Github:
+                <Link href={props.github} passHref>
+                  <button className={styles.link_button}>Click me</button>
+                </Link>
               </div>
               <div className={styles.card__link}>
                 Website:
@@ -34,11 +38,11 @@ const Member = (props) => {
               </div>
               <div className={styles.card__about_back}>
                 Favorite Language:
-                <div className={styles.card__response}>Java</div>
+                <div className={styles.card__response}>{props.favLang}</div>
               </div>
               <div className={styles.card__about_back}>
                 Age
-                <div className={styles.card__response}>1</div>
+                <div className={styles.card__response}>{props.age}</div>
               </div>
             </div>
           </div>

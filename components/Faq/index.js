@@ -16,7 +16,7 @@ const Faq = (props) => {
 
   return (
     <>
-      <h2 className={styles.faq__heading}>FAQs</h2>
+      <h2 data-aos="fade-up" className={styles.faq__heading}>FAQs</h2>
       {mappedData}
     </>
   );

@@ -6,7 +6,7 @@ const FaqComponent = ({ que, ans }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={styles.faq__container} onClick={() => setOpen(!open)}>
+    <div data-aos="fade-right" className={styles.faq__container} onClick={() => setOpen(!open)}>
       <div className={styles.faq__que_wrapper}>
         <div className={styles.faq__que}>{que}</div>
         <IoMdArrowDropup
