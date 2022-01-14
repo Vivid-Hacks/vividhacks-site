@@ -98,7 +98,7 @@ const TeamMate = (props) => {
         />
         <button type="submit">Submit</button>
       </form>
-      {previewUrl ? <img src={previewUrl} className={styles.previewImg} /> : ""}
+      {previewUrl ? <img src={previewUrl} alt="preview" className={styles.previewImg} /> : ""}
       <Teammates data={data} />
     </div>
   );

@@ -9,8 +9,8 @@ const TOS = () => {
       <h2 className={styles.heading}>AGREEMENT TO TERMS</h2>
       <p>
         These Terms of Use constitute a legally binding agreement made between
-        you, whether personally or on behalf of an entity (“you”) and Vivid
-        Hacks ("Company," “we," “us," or “our”), concerning your access to and
+        you, whether personally or on behalf of an entity ({'“'}you{'“'}) and Vivid
+        Hacks ({'"'}Company,{'"'} “we,{'"'} “us,{'"'} or {'“'}our{'“'}), concerning your access to and
         use of the htttps://http://www.vividhacks.tk website as well as any
         other media form, media channel, mobile website or mobile application
         related, linked, or otherwise connected thereto (collectively, the
@@ -226,7 +226,7 @@ const TOS = () => {
         perform, publish, distribute, or broadcast content and materials to us
         or on the Site, including but not limited to text, writings, video,
         audio, photographs, graphics, comments, suggestions, or personal
-        information or other material (collectively, "Contributions").
+        information or other material (collectively, {'"'}Contributions{'"'}).
         Contributions may be viewable by other users of the Site and through
         third-party websites. As such, any Contributions you transmit may be
         treated in accordance with the Site Privacy Policy. When you create or
@@ -327,7 +327,7 @@ const TOS = () => {
       <h2>SUBMISSIONS</h2>
       <p>
         You acknowledge and agree that any questions, comments, suggestions,
-        ideas, feedback, or other information regarding the Site ("Submissions")
+        ideas, feedback, or other information regarding the Site ({'"'}Submissions{'"'})
         provided by you to us are non-confidential and shall become our sole
         property. We shall own exclusive rights, including all intellectual
         property rights, and shall be entitled to the unrestricted use and
@@ -342,10 +342,10 @@ const TOS = () => {
       <h2>THIRD-PARTY WEBSITE AND CONTENT</h2>
       <p>
         The Site may contain (or you may be sent via the Site) links to other
-        websites ("Third-Party Websites") as well as articles, photographs,
+        websites ({'"'}Third-Party Websites{'"'}) as well as articles, photographs,
         text, graphics, pictures, designs, music, sound, video, information,
         applications, software, and other content or items belonging to or
-        originating from third parties ("Third-Party Content"). Such Third-Party
+        originating from third parties ({'"'}Third-Party Content{'"'}). Such Third-Party
         Websites and Third-Party Content are not investigated, monitored, or
         checked for accuracy, appropriateness, or completeness by us, and we are
         not responsible for any Third-Party Websites accessed through the Site
