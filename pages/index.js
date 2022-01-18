@@ -10,6 +10,7 @@ import sike from "../public/team/sike.jpg";
 import simon from "../public/team/Simon.png";
 import emily from "../public/team/emily.jpg";
 import manish from "../public/team/manish.png";
+import Head from 'next/head'
 
 const data = [
   {
@@ -92,6 +93,39 @@ const qna = [
 const Index = () => {
   return (
     <>
+      <Head>
+        <title>Vivid Hacks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+        <meta name="description" content="Some description."></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:title" content="Vivid Hacks"></meta>
+        <link rel="icon" type="image/png" href="/logo.png"/>
+        <meta
+          property="og:description"
+          content="Vivid Hacks is 65 hour hackathon for everyone"
+        ></meta>
+        <meta property="og:url" content="https://vividhacks.tech"></meta>
+        <meta
+          property="og:image"
+          content="/logo.png"
+        ></meta>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-32HZRLPPZT`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-32HZRLPPZT', {
+                      page_path: window.location.pathname,
+                    });
+                  `,
+          }}
+        />
+      </Head>
       <Home />
       <About />
       <TeamMates data={data} />
