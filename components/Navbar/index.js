@@ -27,6 +27,9 @@ const Navbar = () => {
           <a href="#" className={styles.link}>
             REGISTER
           </a>
+          <a href="//2021.vividhacks.tk" className={styles.link}>
+            2021 SITE
+          </a>
         </div>
         <AiOutlineMenu
           onClick={() => setOpen(!open)}
