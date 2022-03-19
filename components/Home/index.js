@@ -40,7 +40,7 @@ const Home = () => {
             <span className={styles.buttonSpan}>Register Now</span>
           </button>
         </div>{" "}
-        <div className={styles.date}>November 19, 2021, 5PM EST</div>
+        <div className={styles.date}>Summer, 2022, 5PM EST</div>
         <div className={styles.text}>
           A 65-Hour Student Lead Hackathon <br /> Designed For{" "}
           <span style={{ color: "#FF9900" }}>Everybody</span>
