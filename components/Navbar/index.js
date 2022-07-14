@@ -119,7 +119,7 @@ class Content extends React.Component {
               <h3 className={styles.logoText}>Vivid Hacks<h6 className={styles.subLogo} style={{ display: "inline-block", margin: 0, marginLeft: "10px" }}>v1.5</h6></h3>
             </a>
           </CrossLink>
-          <CrossLink href="//vividhacks.tech">
+          <CrossLink href="/">
             <a>
               <img
                 src="logo.svg"
