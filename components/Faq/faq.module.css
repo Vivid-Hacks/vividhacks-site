@@ -20,7 +20,7 @@
 
 .faq__wrapper {
   overflow: hidden;
-  transition: all .3s;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
 .faq__que_wrapper {

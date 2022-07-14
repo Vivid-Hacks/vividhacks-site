@@ -15,10 +15,10 @@ const Faq = (props) => {
   ));
 
   return (
-    <>
+    <div id="faqs">
       <h2 data-aos="fade-up" className={styles.faq__heading}>FAQs</h2>
       {mappedData}
-    </>
+    </div>
   );
 };
 

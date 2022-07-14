@@ -1,6 +1,7 @@
 import Home from "../components/Home";
 import About from "../components/About";
 import TeamMates from "../components/TeamMates";
+import Sponsors from "../components/Sponsor";
 import Faq from "../components/Faq";
 
 // images
@@ -128,6 +129,7 @@ const Index = () => {
       </Head>
       <Home />
       <About />
+      <Sponsors />
       <TeamMates data={data} />
       <Faq data={qna} />
     </>

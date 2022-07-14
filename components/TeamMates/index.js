@@ -12,7 +12,7 @@ const Team = (props) => {
   const mappendItems = data.map((props, i) => <Member key={i} {...props} />);
 
   return (
-    <div className={styles.team__page}>
+    <div className={styles.team__page} id="team">
       <div data-aos="fade-up" className={styles.team__text_wrapper}>
         <h1 className={styles.team__heading}>MEET OUR TEAM</h1>
         <h3 className={styles.team__text}>The people work at</h3>

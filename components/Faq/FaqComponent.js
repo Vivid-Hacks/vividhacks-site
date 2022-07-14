@@ -16,7 +16,7 @@ const FaqComponent = ({ que, ans }) => {
       </div>
       <div
         className={styles.faq__wrapper}
-        style={{ maxHeight: `${open ? "none" : 0}` }}
+        style={{ maxHeight: `${open ? "1000px" : 0}`, transition: `${open ? "max-height 1s ease-in-out": ""}` }}
       >
         <div className={styles.faq__ans}>{ans}</div>
       </div>

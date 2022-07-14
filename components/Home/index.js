@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   const register = () => {
-    window.open("https://vividhacks.devpost.com/");
+    window.open("https://vividhacks-1-5.devpost.com/");
   };
 
   return (
@@ -27,6 +27,9 @@ const Home = () => {
                   "DREAMERS",
                   "BEGINNERS",
                   "EXPERTS",
+                  "DESIGNERS",
+                  "DEVELOPERS",
+                  "STUDENTS"
                 ],
                 autoStart: true,
                 loop: true,
@@ -40,7 +43,10 @@ const Home = () => {
             <span className={styles.buttonSpan}>Register Now</span>
           </button>
         </div>{" "}
-        <div className={styles.date}>Summer, 2022, 5PM EST</div>
+        <div className={styles.date}>August 7, 2022, 5PM EST</div>
+        <div className={styles.text}>
+          Vividhacks v1.0 was a huge success, with over 200 participants, and <span style={{ color: "rgb(88 175 224)" }}>$25,000</span> in prizes given away!
+        </div>
         <div className={styles.text}>
           A 65-Hour Student Lead Hackathon <br /> Designed For{" "}
           <span style={{ color: "#FF9900" }}>Everybody</span>

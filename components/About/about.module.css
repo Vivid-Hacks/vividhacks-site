@@ -1,43 +1,88 @@
+.division {
+  --lineWidth: 500px;
+}
 .container {
-  text-align: center;
+  margin-top: 30px;
+  width: 99vw;
+  padding: 10px 50px;
+  overflow: hidden;
+  z-index: 10;
 }
 
-.textWrapper {
+.bigtext {
+  margin-left: 15%;
+  margin-right: auto;
+  display: block;
+  text-align: left;
+  font-size: 2.5em;
+}
+.desc {
+  display: inline-block;
+  max-width: 40%;
+  font-size: 1.2em;
+  line-height: 2.5em;
+}
+.mainContent {
+  margin-top: 20px;
   display: flex;
-  width: 90%;
-  flex-direction: column;
-  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-
-.wrapper {
-  width: 90%;
-  margin: auto;
+.desc span {
+  font-weight: bold;
 }
-
-.para {
-  text-align: start;
-  font-size: 1.2rem;
-}
-
-.heading {
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .wrapper {
-    max-width: 1200px;
+@media (max-width: 500px) {
+  .desc {
+    display: inline-block;
+    margin-right: 0;
+    max-width: 100%;
+    font-size: 1.2em;
+    line-height: 1.5em;
   }
-  .textWrapper {
-    flex-direction: row-reverse;
-    align-items: center;
+  .mainContent iframe {
+    margin-top: 20px;
+    width: 100% !important;
+    height: 400px;
   }
-
-  .para {
-    width: 60%;
-  }
-
-  .heading {
-   text-align: center; 
+  .faqwrapper {
+    padding-top: 450px;
+    position: absolute;
   }
 }
+.mainContent iframe {
+  margin-top: 20px;
+  width: 40%;
+  height: 400px;
+}
+.faqwrapper {
+  margin-top: 10px;
+}
+.division {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.growingLine {
+  width: var(--lineWidth);
+}
+.body {
+  overflow: hidden;
+}
 
+.animate {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
