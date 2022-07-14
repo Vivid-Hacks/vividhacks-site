@@ -1,6 +1,6 @@
 import styles from "./about.module.css";
 import { useState } from "react";
-import Timeline from "../timeline/";
+import Timeline from "../Timeline/";
 import * as React from "react";
 import { render } from "react-dom";
 
