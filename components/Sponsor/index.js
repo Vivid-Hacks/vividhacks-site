@@ -60,9 +60,12 @@ class Sponsor extends React.Component {
               </a>
               <div><span>Hack Club</span></div>
             </div>
-            <div className={styles.sponsor}>
+          </div>
+          <h2 className={styles.heading2}>Supporters</h2>
+          <div className={styles.sponsorGrid}>
+            <div className={styles.supporter}>
               <a rel="noreferrer" href="https://artofproblemsolving.com/" target="_blank">
-                <img src="/AoPS_Main_Logo.png" width="318"></img>
+                <img src="/AoPS_Main_Logo.png" width="200"></img>
               </a>
               <div><span>Art of Problem Solving</span></div>
             </div>
