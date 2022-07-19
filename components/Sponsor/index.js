@@ -60,6 +60,12 @@ class Sponsor extends React.Component {
               </a>
               <div><span>Hack Club</span></div>
             </div>
+            <div className={styles.sponsor}>
+              <a rel="noreferrer" href="https://www.digitalocean.com" target="_blank">
+                <img src="/digitalocean.png" width="318"></img>
+              </a>
+              <div><span>Digital Ocean</span></div>
+            </div>
           </div>
           <h2 className={styles.heading2}>Supporters</h2>
           <div className={styles.sponsorGrid}>
