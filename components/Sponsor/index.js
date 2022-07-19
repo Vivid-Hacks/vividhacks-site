@@ -69,11 +69,17 @@ class Sponsor extends React.Component {
               </a>
               <div><span>Art of Problem Solving</span></div>
             </div>
-            <div className={styles.supporter}>
+            <div className={styles.supporter} style={{width: "80px"}}>
               <a rel="noreferrer" href="https://leading-learners.com/" target="_blank">
                 <img src="/leading_learners.png" width="80"></img>
               </a>
               <div><span>Leading Learners</span></div>
+            </div>
+            <div className={styles.supporter}>
+              <a rel="noreferrer" href="https://balsamiq.com/" target="_blank">
+                <img src="/balsamiq.png" width="200"></img>
+              </a>
+              <div><span>Balsamiq</span></div>
             </div>
           </div>
           <h4 style={{fontSize: "1.5em"}} className={styles.heading2}>Outreach Partners</h4>

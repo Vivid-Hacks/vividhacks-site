@@ -63,6 +63,10 @@
   }
   .sponsorGrid {
     margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .sponsor {
     display: inline-block;
