@@ -87,6 +87,12 @@ class Sponsor extends React.Component {
               </a>
               <div><span>Balsamiq</span></div>
             </div>
+            <div className={styles.supporter}>
+              <a rel="noreferrer" href="https://www.mecsimcalc.com" target="_blank">
+                <img src="/unknown.png" width="200"></img>
+              </a>
+              <div><span>MecSimCalc</span></div>
+            </div>
           </div>
           <h4 style={{fontSize: "1.5em"}} className={styles.heading2}>Outreach Partners</h4>
           <div className={styles.sponsorGrid}>
