@@ -61,6 +61,12 @@ class Sponsor extends React.Component {
               <div><span>Hack Club</span></div>
             </div>
             <div className={styles.sponsor}>
+              <a rel="noreferrer" href="https://www.wolframalpha.com/" target="_blank">
+                <img src="/wolframalpha.png" width="318"></img>
+              </a>
+              <div><span>Wolfram</span></div>
+            </div>
+            <div className={styles.sponsor}>
               <a rel="noreferrer" href="https://www.digitalocean.com" target="_blank">
                 <img src="/digitalocean.png" width="318"></img>
               </a>
