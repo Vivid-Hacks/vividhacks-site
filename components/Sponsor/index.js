@@ -100,6 +100,18 @@ class Sponsor extends React.Component {
               <div><span>Taskade</span></div>
             </div>
             <div className={styles.supporter}>
+              <a rel="noreferrer" href="https://www.taskade.com" target="_blank">
+                <img src="/desmoslogo.png" width="200"></img>
+              </a>
+              <div><span>Desmos</span></div>
+            </div>
+            <div className={styles.supporter}>
+              <a rel="noreferrer" href="https://www.taskade.com" target="_blank">
+                <img src="/symblailogo.png" width="200"></img>
+              </a>
+              <div><span>Symbl AI</span></div>
+            </div>
+            <div className={styles.supporter}>
               <a rel="noreferrer" href="https://www.mecsimcalc.com" target="_blank">
                 <img src="/mecsimcalc.png" width="200"></img>
               </a>
