@@ -5,13 +5,13 @@ import Sponsors from "../components/Sponsor";
 import Faq from "../components/Faq";
 
 // images
-import eddy from "../public/team/eddy.jpg";
+import eddy from "../public/team/eddy.png";
 import joshua from "../public/team/joshua.jpg";
 import sike from "../public/team/sike.jpg";
 import simon from "../public/team/Simon.png";
 import emily from "../public/team/emily.jpg";
 import manish from "../public/team/manish.png";
-import Head from 'next/head'
+import Head from "next/head";
 
 const data = [
   {
@@ -20,15 +20,15 @@ const data = [
     position: "Organizer",
     github: "https://github.com/Tronbo",
     favLang: "C#/C++",
-    age: 12
+    age: 13,
   },
   {
-    name: "Joshua Zhu",
+    name: "Joshua Zou",
     mediaUrl: joshua.src,
     position: "Oraganizer",
     github: "https://github.com/Joshua-Zou",
     favLang: "Node/C++",
-    age: 14
+    age: 14,
   },
   {
     name: "Ivoine Strachan",
@@ -36,7 +36,7 @@ const data = [
     position: "Organizer",
     github: "https://github.com/sikethedev",
     favLang: "Javascript",
-    age: 16
+    age: 16,
   },
   {
     name: "Emily Cai",
@@ -44,7 +44,7 @@ const data = [
     position: "Sponsership",
     github: "https://github.com/itzEmily",
     favLang: "Javascript",
-    age: 17
+    age: 17,
   },
   {
     name: "Manish",
@@ -52,7 +52,7 @@ const data = [
     position: "lead developer",
     github: "https://github.com/Manish674",
     favLang: "Javascript",
-    age: 16
+    age: 16,
   },
   {
     name: "Simon",
@@ -60,7 +60,7 @@ const data = [
     position: "Sponsership",
     github: "https://github.com/SimonZhao7",
     favLang: "Python",
-    age: 17
+    age: 17,
   },
 ];
 
@@ -96,20 +96,20 @@ const Index = () => {
     <>
       <Head>
         <title>Vivid Hacks</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        ></meta>
         <meta name="description" content="Some description."></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:title" content="Vivid Hacks"></meta>
-        <link rel="icon" type="image/png" href="/logo.png"/>
+        <link rel="icon" type="image/png" href="/logo.png" />
         <meta
           property="og:description"
           content="Vivid Hacks is 65 hour hackathon for everyone"
         ></meta>
         <meta property="og:url" content="https://vividhacks.tech"></meta>
-        <meta
-          property="og:image"
-          content="/logo.png"
-        ></meta>
+        <meta property="og:image" content="/logo.png"></meta>
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-32HZRLPPZT`}
