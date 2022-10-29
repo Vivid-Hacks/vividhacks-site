@@ -10,7 +10,7 @@ const Countdown = () => {
   const [sec, setSec] = useState(0);
   const [hr, setHr] = useState(0);
 
-  const countDownDate = new Date("aug 5, 2022 17:0:0 EST").getTime();
+  const countDownDate = new Date("nov 18, 2022 17:0:0 EST").getTime();
 
   setInterval(() => {
     // current time
