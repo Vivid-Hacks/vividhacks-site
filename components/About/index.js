@@ -26,14 +26,8 @@ class About extends React.Component {
                 allowFullScreen
               ></iframe>
               <div className={styles.desc}>
-                Vivid Hacks is a 65 hour hackathon for everybody. We&apos;ll provide
-                you with the mentors to bring your dream project to{" "}
-                <span style={{ color: "#68EB3B" }}>reality</span>. Build
-                something <span style={{ color: "#EDC229" }}>crazy</span>.
-                Something{" "}
-                <span style={{ color: "#E36C6C" }}>game-changing</span>.
-                Something <span style={{ color: "#2DC2CC" }}>cutting edge</span>
-                . Vivid Hacks is a weekend experience you won&apos;t want to miss. 😛
+                                Vivid Hacks is a 3 day long hackathon for anyone ages 13-21. You'll be will be given a final product (that you can interact with but not see the code for), and try to replicate it within the time frame of 60 minutes. Vivid Hacks is a weekend experience you won&apos;t want to miss. 
+
                 <div className={styles.faqwrapper}>
                   <Timeline />
                 </div>
