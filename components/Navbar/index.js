@@ -179,7 +179,7 @@ class Content extends React.Component {
           </li>
           <li className={styles.link}>
             <a
-              href="https://vividhacks-1-5.devpost.com/"
+              href="https://vivid-hacks-rici.devpost.com/"
               target="_blank"
               className={styles.alink}
               rel="noreferrer"
@@ -197,6 +197,17 @@ class Content extends React.Component {
             >
               {" "}
               2021
+            </a>
+          </li>
+          <li className={styles.link}>
+            <a
+              href="https://2022.vividhacks.org"
+              target="_blank"
+              className={styles.alink}
+              rel="noreferrer"
+            >
+              {" "}
+              2022
             </a>
           </li>
         </ul>
