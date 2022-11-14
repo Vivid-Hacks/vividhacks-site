@@ -116,7 +116,7 @@ class Content extends React.Component {
         <div className={styles.logo}>
           <CrossLink href="/">
             <a>
-              <h3 className={styles.logoText}>Vivid Hacks<h6 className={styles.subLogo} style={{ display: "inline-block", margin: 0, marginLeft: "10px" }}>v1.5</h6></h3>
+              <h3 className={styles.logoText}>Vivid Hacks<h6 className={styles.subLogo} style={{ display: "inline-block", margin: 0, marginLeft: "10px" }}>RICI</h6></h3>
             </a>
           </CrossLink>
           <CrossLink href="/">

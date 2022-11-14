@@ -40,10 +40,12 @@ const Home = () => {
         </h1>
         <div className={styles.animate}>
           <button onClick={register} className={styles.offset}>
+            <a href="https://vivid-hacks-rici.devpost.com/?ref_feature=challenge&ref_medium=discover">
             <span className={styles.buttonSpan}>Register Now</span>
+            </a>
           </button>
         </div>{" "}
-        <div className={styles.date}>August 5, 2022, 5PM EST</div>
+        <div className={styles.date}>November 18, 2022</div>
         <div className={styles.text}>
           Vividhacks v1.0 was a huge success, with over 200 participants, and <span style={{ color: "rgb(88 175 224)" }}>$25,000</span> in prizes given away!
         </div>
