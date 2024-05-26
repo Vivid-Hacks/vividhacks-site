@@ -40,11 +40,11 @@ const Footer = () => {
       <div className={styles.footer__copyright}>
         2021 © Vivid Hacks. All rights reserved{" "}
         <span style={{ marginRight: "0.5rem", marginLeft: "0.5rem" }}>|</span>
-        <Link passHref href="https://2021.vividhacks.tech/tos">
+        <Link passHref href="https://2021.vividhacks.net/tos">
           Terms of Service
         </Link>
         <span style={{ marginRight: "0.5rem", marginLeft: "0.5rem" }}>|</span>
-        <Link passHref href="https://2021.vividhacks.tech/privacy-policy">
+        <Link passHref href="https://2021.vividhacks.net/privacy-policy">
           Privacy Policy
         </Link>
       </div>

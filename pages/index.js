@@ -108,7 +108,7 @@ const Index = () => {
           property="og:description"
           content="Vivid Hacks is 65 hour hackathon for everyone"
         ></meta>
-        <meta property="og:url" content="https://vividhacks.tech"></meta>
+        <meta property="og:url" content="https://vividhacks.net"></meta>
         <meta property="og:image" content="/logo.png"></meta>
         <script
           async
