@@ -190,7 +190,7 @@ class Content extends React.Component {
           </li>
           <li className={styles.link}>
             <a
-              href="https://2021.vividhacks.org"
+              href="https://2021.vividhacks.net"
               target="_blank"
               className={styles.alink}
               rel="noreferrer"
@@ -201,7 +201,7 @@ class Content extends React.Component {
           </li>
           <li className={styles.link}>
             <a
-              href="https://2022.vividhacks.org"
+              href="https://2022.vividhacks.net"
               target="_blank"
               className={styles.alink}
               rel="noreferrer"
